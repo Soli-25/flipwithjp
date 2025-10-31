@@ -4,9 +4,12 @@
 
 Website elegante, luxuoso e clean desenvolvido para apresentação da metodologia JP Group Construction a investidores imobiliários. O site apresenta o sistema comprovado de flipping houses com ROI de 30-100%.
 
+**V5 - Atualização:** Nova capa premium do livro "The Million Dollar Code" (versão escura/luxuosa) + Sistema de acesso para membros implementado.
+
 ## ✨ URLs
 
 - **Desenvolvimento Local**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai
+- **Área de Membros**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/acesso
 - **Produção**: (Aguardando deploy para Cloudflare Pages)
 - **Website Oficial**: http://www.jpgroupc.com
 - **Email**: contato@jpgroupc.com
@@ -14,12 +17,13 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 ## 🎯 Funcionalidades Implementadas
 
 ### ✅ Seções Completas
-- [x] **Hero Section** - Apresentação impactante com estatísticas principais
-- [x] **Quote Section** - Frase de efeito do fundador
+- [x] **Hero Section** - Apresentação impactante com foto profissional do autor + capa premium do livro
+- [x] **Quote Section** - Frase de efeito do fundador Juscelio Cruz
 - [x] **Mentoria Master Flip** - 5 Pilares da Transformação
 - [x] **Anatomia de um Deal Milionário** - Protocolo de Prospecção JP completo
 - [x] **Sistema de Prospecção** - 5 Fases do protocolo com ferramentas e exemplos
 - [x] **Critérios de Seleção de Elite** - 4 Pilares (Crime, Escolas, Crescimento, Vendas)
+- [x] **Sistema de Acesso para Membros** - Login funcional + área protegida com 6 módulos
 - [x] **Sobre** - Missão, valores e credenciais da empresa
 - [x] **Metodologia** - Timeline de 8 semanas detalhada
 - [x] **Resultados** - Case studies reais com ROI comprovado
@@ -32,12 +36,15 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 ### 🎨 Design & UX
 - [x] Design luxuoso com paleta dourada (#d4af37)
 - [x] Tipografia premium (Playfair Display + Inter)
+- [x] Imagens profissionais (foto do autor + capa premium do livro versão escura)
+- [x] Efeitos 3D e glassmorphism nos cards
 - [x] Animações sutis com Intersection Observer
 - [x] Scroll progress bar
 - [x] Navbar com efeito de scroll
 - [x] Menu mobile responsivo
 - [x] Cards com efeito hover luxuoso
 - [x] Timeline interativa
+- [x] Sistema de autenticação com proteção de rotas
 
 ### 📱 Recursos Técnicos
 - [x] Totalmente responsivo (mobile-first)
@@ -144,12 +151,16 @@ npm run deploy:prod
 webapp/
 ├── src/
 │   ├── index.tsx          # Aplicação principal com todas as seções
+│   ├── login.tsx          # Sistema de autenticação e área de membros
 │   └── renderer.tsx       # Template HTML base
 ├── public/
 │   └── static/
-│       └── style.css      # Estilos customizados luxuosos
+│       ├── style.css      # Estilos customizados luxuosos
+│       ├── book-cover.jpg # Capa premium do livro (V5 - versão escura)
+│       └── jp-photo.jpg   # Foto profissional do autor Juscelio Cruz
 ├── dist/                  # Build output (gerado)
 ├── .git/                  # Repositório git
+├── INSTRUCOES_ACESSO.md   # Documentação do sistema de acesso
 ├── ecosystem.config.cjs   # Configuração PM2
 ├── wrangler.jsonc         # Configuração Cloudflare
 ├── vite.config.ts         # Configuração Vite
@@ -192,12 +203,14 @@ webapp/
 2. [ ] Integrar CRM para captura de leads
 3. [ ] Adicionar galeria de fotos de projetos reais
 4. [ ] Implementar blog com artigos sobre flipping
-5. [ ] Adicionar calculadora interativa de ROI
+5. [ ] Adicionar calculadora interativa de ROI avançada
 6. [ ] Integrar vídeos de depoimentos
 7. [ ] Adicionar seção de FAQ
-8. [ ] Implementar área restrita para investidores
+8. [ ] Migrar autenticação para backend (Cloudflare D1 + JWT)
 9. [ ] Adicionar tracking de analytics (Google Analytics)
 10. [ ] Implementar A/B testing para otimização
+11. [ ] Integrar sistema de pagamento para mentoria
+12. [ ] Adicionar dashboard de progresso dos alunos
 
 ### Otimizações Técnicas
 1. [ ] Implementar lazy loading de imagens
@@ -226,7 +239,15 @@ webapp/
 **JP Group Construction**
 - Website: http://www.jpgroupc.com
 - Email: contato@jpgroupc.com
-- Fundador: Juscelio Cruz (JP)
+- Fundador: **Juscelio Cruz** (JP)
+- Livro: "The Million Dollar Code: Sistema Comprovado de Flipping Houses"
+
+### Credenciais de Acesso (Demo)
+Para acessar a área de membros, utilize:
+- Email: `demo@jpgroup.com`
+- Senha: `mentoria2024`
+
+Veja `INSTRUCOES_ACESSO.md` para mais detalhes.
 
 ## 📄 Licença
 
