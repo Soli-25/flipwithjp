@@ -1,0 +1,47 @@
+╔══════════════════════════════════════════════════════════╗
+║          🔑 TOKENS DE ACESSO - JP GROUP                  ║
+╚══════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🥉 TOKEN BÁSICO (Demo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TOKEN-DEMO-001
+
+   Acesso: Homepage, Área de Membros, Processo de Mentoria
+
+
+🥈 TOKEN VIP (Completo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TOKEN-VIP-002
+
+   Acesso: Tudo + Módulos + Downloads + Q&A + Deal Analysis
+
+
+🥇 TOKEN ELITE (Total)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TOKEN-ELITE-003
+
+   Acesso: Tudo + Masterclass + Office Hours + Inner Circle
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 COMO USAR:
+
+1. Acesse: http://localhost:3000
+2. Será redirecionado para /verify
+3. Cole um dos tokens acima
+4. Clique em "Verificar Token"
+5. Explore as novidades!
+
+
+✨ NOVIDADES QUE VOCÊ VAI VER:
+
+✅ Processo de Mentoria em 4 Passos (numerados)
+✅ Anúncio do livro "The Million Dollar Code"
+✅ Seção "O que você vai fazer" em cada passo
+✅ Fluxo visual do processo completo
+✅ Botões descritivos com números dos passos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
