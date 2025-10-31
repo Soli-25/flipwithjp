@@ -3,6 +3,7 @@ import { renderer } from './renderer'
 import loginApp from './login'
 import qrcodeApp from './qrcode'
 import bibliotecaApp from './biblioteca'
+import jornadaApp from './jornada'
 
 const app = new Hono()
 
@@ -10,6 +11,9 @@ app.use(renderer)
 
 // Montar as rotas de QR Code (público)
 app.route('/', qrcodeApp)
+
+// Montar as rotas da Jornada (13 Capítulos)
+app.route('/', jornadaApp)
 
 // Montar as rotas da Biblioteca Premium (protegido)
 app.route('/', bibliotecaApp)
