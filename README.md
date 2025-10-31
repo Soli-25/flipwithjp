@@ -4,6 +4,8 @@
 
 Website elegante, luxuoso e clean desenvolvido para apresentação da metodologia JP Group Construction a investidores imobiliários. O site apresenta o sistema comprovado de flipping houses com ROI de 30-100%.
 
+**V7 - Biblioteca Premium:** 📚 Sistema completo com 5 documentos exclusivos (150K+ palavras) + Visualizador Markdown luxuoso + Integração total com QR Code.
+
 **V6 - Sistema QR Code:** 🔐 Site totalmente protegido com sistema de acesso via QR Code + Tokens únicos para cada membro + Painel de administração completo.
 
 **V5 - Atualização:** Nova capa premium do livro "The Million Dollar Code" (versão escura/luxuosa) + Sistema de acesso para membros implementado.
@@ -11,6 +13,7 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 ## ✨ URLs
 
 - **Desenvolvimento Local**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai
+- **📚 Biblioteca Premium**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/biblioteca
 - **Verificação QR Code**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/verify
 - **Admin QR Codes**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/admin/qr
 - **Área de Membros (Legado)**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/acesso
@@ -27,6 +30,12 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 - [x] **Anatomia de um Deal Milionário** - Protocolo de Prospecção JP completo
 - [x] **Sistema de Prospecção** - 5 Fases do protocolo com ferramentas e exemplos
 - [x] **Critérios de Seleção de Elite** - 4 Pilares (Crime, Escolas, Crescimento, Vendas)
+- [x] **📚 Biblioteca Premium** - 5 documentos exclusivos (150K+ palavras)
+  - 📜 Manifesto: 21 Princípios Secretos (26KB)
+  - 💰 Guia de Investimento: 7 Caminhos (26KB)
+  - 🧮 Calculadoras e Templates (19KB)
+  - 💎 Estrutura de Produtos (17KB)
+  - 📖 Índice Master (14KB)
 - [x] **🔐 Sistema QR Code** - Proteção total do site + Tokens únicos + Painel admin
 - [x] **Sistema de Acesso para Membros** - Login funcional + área protegida com 6 módulos (legado)
 - [x] **Sobre** - Missão, valores e credenciais da empresa
@@ -107,6 +116,13 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 - **Experiência**: 10+ anos
 - **Projetos Concluídos**: 100+
 - **Volume de Transações**: $10M+
+
+### Biblioteca Premium
+- **Documentos**: 5 arquivos exclusivos
+- **Conteúdo Total**: 150,000+ palavras
+- **Tamanho Total**: 102 KB (Markdown)
+- **Tempo de Leitura**: 10-15 horas
+- **Formato**: Markdown renderizado com luxo
 
 ### Case Studies Reais
 1. **Projeto Atlanta**: $50K lucro (38.5% ROI)
