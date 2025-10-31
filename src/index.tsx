@@ -43,20 +43,74 @@ app.get('/', (c) => {
       {/* Scroll Progress Bar */}
       <div id="scroll-progress" class="scroll-progress" style="transform: scaleX(0);"></div>
 
-      {/* Navigation */}
+      {/* Indicador de Passos Fixo */}
+      <div class="fixed left-8 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
+        <div class="space-y-4">
+          <a href="#passo1" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                1
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Apresentação</span>
+            </div>
+          </a>
+          <a href="#passo2" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                2
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Sistema</span>
+            </div>
+          </a>
+          <a href="#passo3" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                3
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Critérios</span>
+            </div>
+          </a>
+          <a href="#passo4" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                4
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Execução</span>
+            </div>
+          </a>
+          <a href="#passo5" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                5
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Resultados</span>
+            </div>
+          </a>
+          <a href="/mentoria" class="block group">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full border-2 border-gold-400 flex items-center justify-center text-gold-400 font-bold transition group-hover:bg-gold-400 group-hover:text-black">
+                <i class="fas fa-crown text-sm"></i>
+              </div>
+              <span class="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">Mentoria</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      {/* Navigation com Passos */}
       <nav class="navbar fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4">
           <div class="flex justify-between items-center">
             <div class="font-display text-2xl font-bold gradient-gold">JP GROUP</div>
             <div class="hidden md:flex space-x-6">
-              <a href="#sobre" class="text-gray-300 hover:text-gold-400 transition text-sm">Sobre</a>
-              <a href="#sistema" class="text-gray-300 hover:text-gold-400 transition text-sm">Sistema</a>
-              <a href="#criterios" class="text-gray-300 hover:text-gold-400 transition text-sm">Critérios</a>
-              <a href="#metodologia" class="text-gray-300 hover:text-gold-400 transition text-sm">Metodologia</a>
-              <a href="#resultados" class="text-gray-300 hover:text-gold-400 transition text-sm">Resultados</a>
+              <a href="#passo1" class="text-gray-300 hover:text-gold-400 transition text-sm"><span class="text-gold-400">①</span> Visão Geral</a>
+              <a href="#passo2" class="text-gray-300 hover:text-gold-400 transition text-sm"><span class="text-gold-400">②</span> Sistema</a>
+              <a href="#passo3" class="text-gray-300 hover:text-gold-400 transition text-sm"><span class="text-gold-400">③</span> Critérios</a>
+              <a href="#passo4" class="text-gray-300 hover:text-gold-400 transition text-sm"><span class="text-gold-400">④</span> Execução</a>
+              <a href="#passo5" class="text-gray-300 hover:text-gold-400 transition text-sm"><span class="text-gold-400">⑤</span> Resultados</a>
               <a href="/biblioteca" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-book mr-1"></i>Biblioteca</a>
               <a href="/mentoria" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-crown mr-1"></i>Mentoria</a>
-              <a href="#contato" class="btn-primary px-6 py-2 rounded-full text-sm">Contato</a>
+              <a href="#contato" class="btn-primary px-6 py-2 rounded-full text-sm">Começar</a>
             </div>
             <button class="md:hidden text-gold-400" onclick="toggleMenu()">
               <i class="fas fa-bars text-2xl"></i>
@@ -68,25 +122,25 @@ app.get('/', (c) => {
       {/* Mobile Menu */}
       <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-95 z-40 md:hidden">
         <div class="flex flex-col items-center justify-center h-full space-y-6">
-          <a href="#sobre" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Sobre</a>
-          <a href="#sistema" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Sistema</a>
-          <a href="#criterios" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Critérios</a>
-          <a href="#metodologia" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Metodologia</a>
-          <a href="#resultados" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Resultados</a>
-          <a href="#contato" class="btn-primary px-8 py-3 rounded-full text-xl" onclick="toggleMenu()">Contato</a>
+          <a href="#passo1" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">① Visão Geral</a>
+          <a href="#passo2" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">② Sistema</a>
+          <a href="#passo3" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">③ Critérios</a>
+          <a href="#passo4" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">④ Execução</a>
+          <a href="#passo5" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">⑤ Resultados</a>
+          <a href="#contato" class="btn-primary px-8 py-3 rounded-full text-xl" onclick="toggleMenu()">Começar</a>
         </div>
       </div>
 
-      {/* Hero Section - Versão Luxuosa com Imagens */}
-      <section class="hero-bg min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+      {/* PASSO 1: Hero Section - Apresentação */}
+      <section id="passo1" class="hero-bg min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 hero-content">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Coluna Esquerda - Conteúdo */}
             <div class="text-center lg:text-left animate-fade-in-up">
               <div class="inline-block mb-6 px-6 py-3 luxury-badge rounded-full text-gold-400 text-sm font-semibold tracking-wider">
-                <i class="fas fa-crown mr-2"></i>
-                MENTORIA MASTER FLIP
+                <span class="text-2xl mr-2">①</span>
+                PASSO 1: APRESENTAÇÃO
               </div>
               
               <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
@@ -232,6 +286,16 @@ app.get('/', (c) => {
           <div class="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-gold-400 rounded-full opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
           <div class="absolute top-2/3 right-1/3 w-1 h-1 bg-gold-400 rounded-full opacity-50 animate-pulse" style="animation-delay: 1.5s;"></div>
         </div>
+
+        {/* Botão Próximo Passo */}
+        <div class="absolute bottom-24 left-0 right-0">
+          <div class="max-w-7xl mx-auto px-6 text-center">
+            <a href="#passo2" class="inline-flex items-center gap-3 px-8 py-4 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 border-2 border-gold-400 text-gold-400 rounded-full font-bold transition">
+              <span>PRÓXIMO PASSO: O Sistema Million Dollar</span>
+              <i class="fas fa-arrow-down animate-bounce"></i>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Quote Section */}
@@ -246,12 +310,13 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Mentoria Master Flip Section */}
-      <section class="section">
+      {/* PASSO 2: Sistema Million Dollar */}
+      <section id="passo2" class="section">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-16">
             <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
-              MENTORIA MASTER FLIP
+              <span class="text-2xl mr-2">②</span>
+              PASSO 2: O SISTEMA MILLION DOLLAR
             </div>
             <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
               Onde o Conhecimento se<br />Transforma em Patrimônio
@@ -343,16 +408,25 @@ app.get('/', (c) => {
                 mas em <span class="gradient-gold">dólares, propriedades e liberdade financeira</span>.
               </p>
             </div>
+
+            {/* Botão Próximo Passo */}
+            <div class="mt-12 text-center">
+              <a href="#passo3" class="inline-flex items-center gap-3 px-8 py-4 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 border-2 border-gold-400 text-gold-400 rounded-full font-bold transition">
+                <span>PRÓXIMO PASSO: Critérios de Seleção</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Sistema de Prospecção Section */}
-      <section id="sistema" class="section gradient-dark">
+      {/* PASSO 3: Critérios de Seleção */}
+      <section id="passo3" class="section gradient-dark">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-16">
             <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
-              CAPÍTULO 1
+              <span class="text-2xl mr-2">③</span>
+              PASSO 3: CRITÉRIOS DE SELEÇÃO
             </div>
             <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
               A Anatomia de um<br />Deal Milionário
@@ -1283,16 +1357,20 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Metodologia Section */}
-      <section id="metodologia" class="section gradient-dark">
+      {/* PASSO 4: Metodologia de Execução */}
+      <section id="passo4" class="section gradient-dark">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-16">
+            <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+              <span class="text-2xl mr-2">④</span>
+              PASSO 4: METODOLOGIA DE EXECUÇÃO
+            </div>
             <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
-              Nossa Metodologia
+              Sistema de 8 Semanas
             </h2>
             <div class="w-20 h-1 gradient-gold-bg mx-auto mb-8"></div>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-              O sistema de 8 semanas que transforma propriedades em máquinas de lucro
+              O processo exato que transforma propriedades destruídas em máquinas de lucro
             </p>
           </div>
 
@@ -1378,16 +1456,20 @@ app.get('/', (c) => {
         </div>
       </section>
 
-      {/* Resultados Section */}
-      <section id="resultados" class="section">
+      {/* PASSO 5: Resultados Comprovados */}
+      <section id="passo5" class="section">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-16">
+            <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+              <span class="text-2xl mr-2">⑤</span>
+              PASSO 5: RESULTADOS REAIS
+            </div>
             <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
-              Resultados Comprovados
+              Provas de Sucesso
             </h2>
             <div class="w-20 h-1 gradient-gold-bg mx-auto mb-8"></div>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-              Números reais de projetos executados com nosso sistema
+              Números reais, projetos reais, lucros reais com nosso sistema
             </p>
           </div>
 
