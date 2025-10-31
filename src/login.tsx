@@ -436,6 +436,213 @@ loginApp.get('/mentoria', (c) => {
             </div>
           </div>
 
+          {/* Seção: Os 13 Capítulos do Flipping House */}
+          <div class="mb-16">
+            <div class="text-center mb-12">
+              <h2 class="font-display text-4xl font-bold gradient-gold mb-6">
+                <i class="fas fa-book-open mr-3"></i>
+                Os 13 Capítulos do Flipping House
+              </h2>
+              <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+                Sistema completo revelado por Juscelio Cruz com mais de 10 anos de experiência. 
+                Acesse <a href="/jornada" class="text-gold-400 hover:underline font-semibold">a jornada completa aqui</a>.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Capítulo 1 */}
+              <a href="/jornada#capitulo1" class="luxury-card p-6 rounded-xl hover:scale-105 transition-transform">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">1</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Como Encontrar Oportunidades</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Zillow.com + QPublic para descobrir propriedades desvalorizadas</p>
+                <div class="text-xs text-gold-400 font-semibold">
+                  <i class="fas fa-arrow-right mr-2"></i>Ver Capítulo
+                </div>
+              </a>
+
+              {/* Capítulo 2 */}
+              <a href="/jornada#capitulo2" class="luxury-card p-6 rounded-xl hover:scale-105 transition-transform">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-blue-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">2</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Critérios de Seleção</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">3 tipos de reforma + 4 itens essenciais para avaliar</p>
+                <div class="text-xs text-gold-400 font-semibold">
+                  <i class="fas fa-arrow-right mr-2"></i>Ver Capítulo
+                </div>
+              </a>
+
+              {/* Capítulo 3 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-green-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">3</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Estruturação</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">9 fases detalhadas da estruturação do flipping</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 4 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-purple-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">4</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Planta da Casa</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">SmartDraw: como fazer suas próprias plantas</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 5 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-red-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">5</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Building Permits</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Documentação e processo para permits</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 6 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">6</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Gerenciamento</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Como gerenciar múltiplas obras simultâneas</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 7 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-indigo-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">7</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">BuilderTrend</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Software de gerenciamento de obras</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 8 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-pink-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">8</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Schedule & Inspeções</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Sub contractors, inspeções e materiais</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 9 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-teal-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">9</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">QuickBooks</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Estrutura financeira e controle de gastos</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 10 */}
+              <a href="/jornada#capitulo10" class="luxury-card p-6 rounded-xl hover:scale-105 transition-transform">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-orange-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">10</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Compra de Materiais</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Home Depot PRO, Amazon e fornecedores</p>
+                <div class="text-xs text-gold-400 font-semibold">
+                  <i class="fas fa-arrow-right mr-2"></i>Ver Capítulo
+                </div>
+              </a>
+
+              {/* Capítulo 11 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">11</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Acabamentos</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Padronização e foco em custo-benefício</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 12 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-lime-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">12</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Parcerias</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Como criar parcerias estratégicas</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+
+              {/* Capítulo 13 */}
+              <div class="luxury-card p-6 rounded-xl opacity-75">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-rose-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-2xl">13</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold">Conclusão</h3>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Recap completo e próximos passos</p>
+                <div class="text-xs text-gray-500">
+                  <i class="fas fa-lock mr-2"></i>Em breve
+                </div>
+              </div>
+            </div>
+
+            {/* CTA para Jornada Completa */}
+            <div class="mt-12 text-center">
+              <a href="/jornada" class="inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-gold-400 to-gold-300 text-black text-lg font-bold rounded-full hover:scale-105 transition-transform shadow-2xl">
+                <i class="fas fa-route text-2xl"></i>
+                <span>Acessar Jornada Completa dos 13 Capítulos</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
           {/* Grid de Conteúdos */}
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
