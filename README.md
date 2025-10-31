@@ -1,8 +1,10 @@
-# JP Group Construction - O Código de Um Milhão de Dólares
+# FlipWithJP - O Código de Um Milhão de Dólares
 
 ## 🏆 Visão Geral do Projeto
 
-Website elegante, luxuoso e clean desenvolvido para apresentação da metodologia JP Group Construction a investidores imobiliários. O site apresenta o sistema comprovado de flipping houses com ROI de 30-100%.
+**FlipWithJP** é um website elegante, luxuoso e clean desenvolvido para apresentar a metodologia completa de Flipping Houses por Juscelio Cruz (JP Group Construction). O site oferece acesso aos 13 capítulos do sistema comprovado com ROI de 30-100%.
+
+**V9 - Sistema Completo de 13 Capítulos:** 📚 Página `/jornada` com jornada completa + Grid visual na área de mentoria com todos os capítulos + Materiais (Home Depot PRO, Amazon, fornecedores).
 
 **V8 - Agenda & Lançamento:** 📅 Agenda completa de mentorias ao vivo (4 tipos de sessões) + Banner de lançamento do livro físico "The Million Dollar Code" (2025).
 
@@ -39,6 +41,20 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
   - 🧮 Calculadoras e Templates (19KB)
   - 💎 Estrutura de Produtos (17KB)
   - 📖 Índice Master (14KB)
+- [x] **📚 Os 13 Capítulos do Flipping House** - Sistema completo em `/jornada`
+  - Capítulo 1: Como Encontrar Oportunidades (Zillow + QPublic) ✅
+  - Capítulo 2: Critérios de Seleção (3 tipos reforma + 4 itens) ✅
+  - Capítulo 3: Estruturação (9 fases) 🔒
+  - Capítulo 4: Planta da Casa (SmartDraw) 🔒
+  - Capítulo 5: Building Permits 🔒
+  - Capítulo 6: Gerenciamento de Obra 🔒
+  - Capítulo 7: BuilderTrend 🔒
+  - Capítulo 8: Schedule & Inspeções 🔒
+  - Capítulo 9: QuickBooks (Financeiro) 🔒
+  - Capítulo 10: Compra de Materiais (Home Depot PRO + Amazon) ✅
+  - Capítulo 11: Acabamentos 🔒
+  - Capítulo 12: Parcerias 🔒
+  - Capítulo 13: Conclusão 🔒
 - [x] **📅 Agenda de Mentorias** - 4 tipos de sessões ao vivo
   - Q&A Mensal (1ª Sexta, 19:00-21:00 EST)
   - Deal Analysis (Quinzenal, 20:00-21:30 EST)
