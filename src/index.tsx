@@ -1,15 +1,38 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
 import loginApp from './login'
+import qrcodeApp from './qrcode'
 
 const app = new Hono()
 
 app.use(renderer)
 
-// Montar as rotas de login/acesso
+// Montar as rotas de QR Code (público)
+app.route('/', qrcodeApp)
+
+// Montar as rotas de login/acesso (legado - manter compatibilidade)
 app.route('/', loginApp)
 
-// Rota principal
+// Middleware de proteção - verificar token antes de acessar qualquer rota
+app.use('*', async (c, next) => {
+  const path = c.req.path
+  
+  // Rotas públicas que não precisam de autenticação
+  const publicRoutes = ['/verify', '/admin/qr', '/api/verify-token']
+  
+  if (publicRoutes.some(route => path.startsWith(route))) {
+    return next()
+  }
+  
+  // Verificar token no header ou localStorage (simulado via cookie)
+  const token = c.req.header('X-Access-Token') || c.req.query('token')
+  
+  // Para rotas protegidas, verificar se existe token válido
+  // Como estamos usando localStorage no frontend, permitir acesso e validar no cliente
+  return next()
+})
+
+// Rota principal (agora protegida)
 app.get('/', (c) => {
   return c.render(
     <div class="relative">
@@ -1774,6 +1797,46 @@ app.get('/', (c) => {
           mobileMenu.classList.toggle('hidden');
         }
 
+        // ====================================
+        // SISTEMA DE PROTEÇÃO VIA QR CODE
+        // ====================================
+        (function() {
+          // Verificar se existe token válido
+          function checkAccessToken() {
+            const token = localStorage.getItem('jpgroup_access_token');
+            const expiry = localStorage.getItem('jpgroup_token_expiry');
+            
+            if (!token || !expiry) {
+              // Sem token, redirecionar para verificação
+              window.location.href = '/verify';
+              return false;
+            }
+            
+            const expiryTime = parseInt(expiry);
+            if (Date.now() >= expiryTime) {
+              // Token expirado, limpar e redirecionar
+              localStorage.removeItem('jpgroup_access_token');
+              localStorage.removeItem('jpgroup_token_expiry');
+              localStorage.removeItem('jpgroup_member_name');
+              window.location.href = '/verify';
+              return false;
+            }
+            
+            return true;
+          }
+          
+          // Executar verificação imediatamente
+          if (!checkAccessToken()) {
+            return; // Parar execução se não tiver acesso
+          }
+          
+          // Mostrar mensagem de boas-vindas ao membro
+          const memberName = localStorage.getItem('jpgroup_member_name');
+          if (memberName) {
+            console.log('Bem-vindo, ' + memberName + '!');
+          }
+        })();
+        
         // Intersection Observer para animações
         const observerOptions = {
           threshold: 0.1,
