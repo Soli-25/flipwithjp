@@ -22,6 +22,7 @@ app.get('/', (c) => {
               <a href="#criterios" class="text-gray-300 hover:text-gold-400 transition text-sm">Critérios</a>
               <a href="#metodologia" class="text-gray-300 hover:text-gold-400 transition text-sm">Metodologia</a>
               <a href="#resultados" class="text-gray-300 hover:text-gold-400 transition text-sm">Resultados</a>
+              <a href="/login" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-crown mr-1"></i>Área de Membros</a>
               <a href="#contato" class="btn-primary px-6 py-2 rounded-full text-sm">Contato</a>
             </div>
             <button class="md:hidden text-gold-400" onclick="toggleMenu()">
@@ -72,10 +73,10 @@ app.get('/', (c) => {
               {/* Foto do JP */}
               <div class="flex items-center justify-center lg:justify-start gap-4 mb-8">
                 <div class="jp-photo rounded-full w-20 h-20 overflow-hidden">
-                  <img src="/static/jp-hero.jpg" alt="Juscelio Toledo" class="w-full h-full object-cover" />
+                  <img src="/static/jp-photo.jpg" alt="Juscelio Cruz" class="w-full h-full object-cover" />
                 </div>
                 <div class="text-left">
-                  <div class="font-display text-xl font-bold gradient-gold">Juscelio Toledo</div>
+                  <div class="font-display text-xl font-bold gradient-gold">Juscelio Cruz</div>
                   <div class="text-sm text-gray-400">Founder & CEO, JP Group Construction</div>
                   <div class="text-xs text-gold-400 mt-1">
                     <i class="fas fa-star"></i>
@@ -1794,6 +1795,386 @@ app.get('/', (c) => {
       </script>
     </div>
   )
+})
+
+// Rota de Login
+app.get('/login', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Acesso à Mentoria - JP Group</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="/static/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="login-container">
+        <div class="login-box">
+          <div class="text-center mb-8">
+            <div class="font-display text-3xl font-bold gradient-gold mb-2">JP GROUP</div>
+            <h1 class="text-2xl font-bold text-white mb-2"><i class="fas fa-crown mr-1"></i>Área de Membros</h1>
+            <p class="text-gray-400 text-sm">Entre com sua senha de acesso para visualizar o conteúdo exclusivo da mentoria</p>
+          </div>
+
+          <form onsubmit="jpAuth.handleLogin(event)" class="space-y-6">
+            <div>
+              <label for="password" class="block text-sm font-semibold text-gray-300 mb-2">
+                <i class="fas fa-lock mr-2 text-gold-400"></i>
+                Senha de Acesso
+              </label>
+              <input 
+                type="password" 
+                id="password" 
+                class="login-input" 
+                placeholder="Digite sua senha"
+                required
+                autocomplete="current-password"
+              />
+            </div>
+
+            <div id="error-message" class="hidden text-red-400 text-sm p-3 bg-red-500 bg-opacity-10 rounded-lg border border-red-500 border-opacity-30">
+            </div>
+
+            <button 
+              type="submit" 
+              id="submit-button"
+              class="btn-primary w-full py-4 rounded-xl text-base font-semibold transition-all"
+            >
+              <i class="fas fa-unlock mr-2"></i>
+              Acessar Conteúdo
+            </button>
+          </form>
+
+          <div class="mt-8 pt-6 border-t border-gray-800">
+            <div class="text-center text-sm text-gray-400">
+              <i class="fas fa-shield-alt text-gold-400 mr-2"></i>
+              Acesso seguro e protegido
+            </div>
+            <div class="text-center mt-4">
+              <a href="/" class="text-gold-400 hover:text-gold-300 text-sm transition">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Voltar ao site
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-8 p-4 bg-blue-500 bg-opacity-10 rounded-lg border border-blue-500 border-opacity-30">
+            <div class="text-sm text-blue-400 mb-2">
+              <i class="fas fa-info-circle mr-2"></i>
+              <strong>Não tem acesso ainda?</strong>
+            </div>
+            <div class="text-xs text-gray-400">
+              Entre em contato conosco para obter sua senha de acesso à mentoria exclusiva.
+            </div>
+            <a href="#contato" class="text-gold-400 hover:text-gold-300 text-sm font-semibold mt-2 inline-block">
+              Solicitar Acesso →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <script src="/static/auth.js"></script>
+      <script>
+        // Redirecionar se já estiver autenticado
+        if (jpAuth.isAuthenticated()) {
+          window.location.href = '/membros';
+        }
+      </script>
+    </body>
+    </html>
+  `)
+})
+
+// Rota da <i class="fas fa-crown mr-1"></i>Área de Membros
+app.get('/membros', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title><i class="fas fa-crown mr-1"></i>Área de Membros - Mentoria Master Flip</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="/static/style.css" rel="stylesheet">
+    </head>
+    <body class="bg-black">
+      <!-- Navbar <i class="fas fa-crown mr-1"></i>Área de Membros -->
+      <nav class="navbar fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-8">
+              <div class="font-display text-2xl font-bold gradient-gold">JP GROUP</div>
+              <div class="protected-badge hidden md:flex">
+                <i class="fas fa-crown"></i>
+                <span><i class="fas fa-crown mr-1"></i>Área de Membros</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="hidden md:block text-sm text-gray-400">
+                <i class="fas fa-user-circle mr-2 text-gold-400"></i>
+                Bem-vindo, Membro
+              </div>
+              <button onclick="toggleSidebar()" class="md:hidden text-gold-400">
+                <i class="fas fa-bars text-xl"></i>
+              </button>
+              <button onclick="jpAuth.logout()" class="btn-secondary px-4 py-2 rounded-full text-sm">
+                <i class="fas fa-sign-out-alt mr-2"></i>
+                Sair
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <aside id="sidebar" class="members-sidebar">
+        <div class="mb-8">
+          <h3 class="text-sm font-bold text-gold-400 uppercase tracking-wider mb-4">Módulos da Mentoria</h3>
+          <nav class="space-y-2">
+            <a href="#modulo-1" class="block px-4 py-3 rounded-lg bg-gold-400 bg-opacity-10 border border-gold-400 text-white">
+              <i class="fas fa-book mr-3 text-gold-400"></i>
+              Módulo 1: Sistema de Prospecção
+            </a>
+            <a href="#modulo-2" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-chart-line mr-3"></i>
+              Módulo 2: Análise de Deals
+            </a>
+            <a href="#modulo-3" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-tools mr-3"></i>
+              Módulo 3: Execução da Obra
+            </a>
+            <a href="#modulo-4" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-money-bill-wave mr-3"></i>
+              Módulo 4: Financiamento
+            </a>
+            <a href="#modulo-5" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-handshake mr-3"></i>
+              Módulo 5: Venda e Lucro
+            </a>
+          </nav>
+        </div>
+
+        <div class="pt-6 border-t border-gray-800">
+          <h3 class="text-sm font-bold text-gold-400 uppercase tracking-wider mb-4">Recursos</h3>
+          <nav class="space-y-2">
+            <a href="#calculadoras" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-calculator mr-3"></i>
+              Calculadoras
+            </a>
+            <a href="#templates" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-file-alt mr-3"></i>
+              Templates
+            </a>
+            <a href="#comunidade" class="block px-4 py-3 rounded-lg hover:bg-gray-800 text-gray-400 transition">
+              <i class="fas fa-users mr-3"></i>
+              Comunidade
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <main class="members-content members-area">
+        <div class="max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="mb-12">
+            <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">
+              Bem-vindo à <span class="gradient-gold">Mentoria Master Flip</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-6">
+              Acesso completo ao sistema de flipping houses que transformou centenas de vidas
+            </p>
+            
+            <!-- Progress do aluno -->
+            <div class="luxury-card p-6 rounded-2xl">
+              <div class="flex justify-between items-center mb-3">
+                <div>
+                  <div class="text-sm text-gray-400 mb-1">Seu Progresso</div>
+                  <div class="text-2xl font-bold gradient-gold">20% Completo</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm text-gray-400 mb-1">Módulos</div>
+                  <div class="text-2xl font-bold">1/5</div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de Módulos -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <!-- Módulo 1 - Desbloqueado -->
+            <div id="modulo-1" class="module-card">
+              <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-gold-400 bg-opacity-20 flex items-center justify-center">
+                    <i class="fas fa-book text-gold-400 text-xl"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm text-gold-400 font-semibold">MÓDULO 1</div>
+                    <div class="text-lg font-bold">Sistema de Prospecção</div>
+                  </div>
+                </div>
+                <div class="bg-green-500 bg-opacity-20 text-green-400 px-3 py-1 rounded-full text-xs font-bold">
+                  <i class="fas fa-unlock mr-1"></i>
+                  DESBLOQUEADO
+                </div>
+              </div>
+              
+              <p class="text-gray-400 text-sm mb-4">
+                Aprenda o protocolo de 5 fases para encontrar propriedades com potencial de 30-100% de ROI
+              </p>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                <div class="flex items-center gap-4 text-sm text-gray-400">
+                  <span><i class="fas fa-video mr-1 text-gold-400"></i> 8 vídeos</span>
+                  <span><i class="fas fa-file-pdf mr-1 text-gold-400"></i> 3 PDFs</span>
+                </div>
+                <a href="/membros/modulo-1" class="btn-primary px-6 py-2 rounded-full text-sm">
+                  Acessar →
+                </a>
+              </div>
+            </div>
+
+            <!-- Módulo 2 - Bloqueado -->
+            <div class="module-card module-locked">
+              <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                    <i class="fas fa-chart-line text-gray-500 text-xl"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm text-gray-500 font-semibold">MÓDULO 2</div>
+                    <div class="text-lg font-bold text-gray-400">Análise de Deals</div>
+                  </div>
+                </div>
+                <div class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs font-bold">
+                  <i class="fas fa-lock mr-1"></i>
+                  BLOQUEADO
+                </div>
+              </div>
+              
+              <p class="text-gray-500 text-sm mb-4">
+                Complete o Módulo 1 para desbloquear este conteúdo
+              </p>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fas fa-video mr-1"></i> 6 vídeos</span>
+                  <span><i class="fas fa-file-pdf mr-1"></i> 2 PDFs</span>
+                </div>
+                <button disabled class="px-6 py-2 rounded-full text-sm bg-gray-800 text-gray-500 cursor-not-allowed">
+                  Bloqueado
+                </button>
+              </div>
+            </div>
+
+            <!-- Módulo 3 - Bloqueado -->
+            <div class="module-card module-locked">
+              <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                    <i class="fas fa-tools text-gray-500 text-xl"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm text-gray-500 font-semibold">MÓDULO 3</div>
+                    <div class="text-lg font-bold text-gray-400">Execução da Obra</div>
+                  </div>
+                </div>
+                <div class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs font-bold">
+                  <i class="fas fa-lock mr-1"></i>
+                  BLOQUEADO
+                </div>
+              </div>
+              
+              <p class="text-gray-500 text-sm mb-4">
+                Complete o Módulo 2 para desbloquear este conteúdo
+              </p>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fas fa-video mr-1"></i> 10 vídeos</span>
+                  <span><i class="fas fa-file-pdf mr-1"></i> 5 PDFs</span>
+                </div>
+                <button disabled class="px-6 py-2 rounded-full text-sm bg-gray-800 text-gray-500 cursor-not-allowed">
+                  Bloqueado
+                </button>
+              </div>
+            </div>
+
+            <!-- Módulo 4 - Bloqueado -->
+            <div class="module-card module-locked">
+              <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                    <i class="fas fa-money-bill-wave text-gray-500 text-xl"></i>
+                  </div>
+                  <div>
+                    <div class="text-sm text-gray-500 font-semibold">MÓDULO 4</div>
+                    <div class="text-lg font-bold text-gray-400">Financiamento</div>
+                  </div>
+                </div>
+                <div class="bg-gray-700 text-gray-400 px-3 py-1 rounded-full text-xs font-bold">
+                  <i class="fas fa-lock mr-1"></i>
+                  BLOQUEADO
+                </div>
+              </div>
+              
+              <p class="text-gray-500 text-sm mb-4">
+                Complete o Módulo 3 para desbloquear este conteúdo
+              </p>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fas fa-video mr-1"></i> 7 vídeos</span>
+                  <span><i class="fas fa-file-pdf mr-1"></i> 4 PDFs</span>
+                </div>
+                <button disabled class="px-6 py-2 rounded-full text-sm bg-gray-800 text-gray-500 cursor-not-allowed">
+                  Bloqueado
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA para suporte -->
+          <div class="luxury-card p-8 rounded-2xl text-center border-2 border-gold-400">
+            <div class="text-gold-400 text-4xl mb-4">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="font-display text-2xl font-bold mb-3">Precisa de Ajuda?</h3>
+            <p class="text-gray-400 mb-6">
+              Nossa equipe está disponível para responder suas dúvidas e ajudá-lo em sua jornada
+            </p>
+            <a href="mailto:contato@jpgroupc.com" class="btn-primary px-8 py-3 rounded-full inline-block">
+              <i class="fas fa-envelope mr-2"></i>
+              Entrar em Contato
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <script src="/static/auth.js"></script>
+      <script>
+        // Proteger a página
+        jpAuth.protectPage();
+
+        // Toggle sidebar mobile
+        function toggleSidebar() {
+          const sidebar = document.getElementById('sidebar');
+          sidebar.classList.toggle('open');
+        }
+      </script>
+    </body>
+    </html>
+  `)
 })
 
 export default app
