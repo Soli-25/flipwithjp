@@ -1,10 +1,15 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
+import loginApp from './login'
 
 const app = new Hono()
 
 app.use(renderer)
 
+// Montar as rotas de login/acesso
+app.route('/', loginApp)
+
+// Rota principal
 app.get('/', (c) => {
   return c.render(
     <div class="relative">
