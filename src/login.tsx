@@ -230,37 +230,35 @@ loginApp.get('/mentoria', (c) => {
             </div>
           </div>
 
-          {/* Agenda de Mentorias */}
+          {/* Processo de Mentoria em Passos */}
           <div class="mb-12">
             <h2 class="font-display text-3xl font-bold gradient-gold mb-6 text-center">
-              <i class="fas fa-calendar-alt mr-3"></i>
-              Agenda de Mentorias Ao Vivo
+              <i class="fas fa-route mr-3"></i>
+              Processo de Mentoria Passo a Passo
             </h2>
             <p class="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
-              Sessões exclusivas com Juscelio Cruz para Q&A, análise de deals e estratégias avançadas.
+              Siga este caminho estruturado com Juscelio Cruz para dominar o flipping de casas nos EUA.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Sessão 1 */}
+              {/* PASSO 1 */}
               <div class="luxury-card p-6 rounded-xl border-l-4 border-gold-400">
-                <div class="flex items-start justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gold-400 bg-opacity-20 rounded-full flex items-center justify-center">
-                      <i class="fas fa-video text-gold-400"></i>
-                    </div>
-                    <div>
-                      <div class="font-bold text-lg">Q&A Mensal</div>
-                      <div class="text-sm text-gray-400">Perguntas e Respostas</div>
-                    </div>
+                <div class="flex items-start gap-4 mb-4">
+                  <div class="w-14 h-14 bg-gold-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-xl">1</span>
                   </div>
-                  <span class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 text-xs font-semibold rounded-full">
-                    Próxima
-                  </span>
+                  <div class="flex-1">
+                    <div class="font-bold text-xl mb-1">Q&A Mensal</div>
+                    <div class="text-sm text-gray-400 mb-3">Tire suas dúvidas e esclareça conceitos</div>
+                    <span class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 text-xs font-semibold rounded-full">
+                      Próxima Sessão
+                    </span>
+                  </div>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm mb-4">
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-calendar w-5 text-gold-400"></i>
-                    <span>Primeira Sexta de cada mês</span>
+                    <span>Primeira Sexta-feira de cada mês</span>
                   </div>
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-clock w-5 text-gold-400"></i>
@@ -268,31 +266,37 @@ loginApp.get('/mentoria', (c) => {
                   </div>
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-users w-5 text-gold-400"></i>
-                    <span>Máx 20 participantes</span>
+                    <span>Máximo 20 participantes</span>
                   </div>
                 </div>
-                <button class="mt-4 w-full px-4 py-2 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 text-gold-400 rounded-lg font-semibold transition">
-                  Reservar Vaga
+                <div class="bg-gold-400 bg-opacity-10 p-3 rounded-lg mb-3">
+                  <div class="text-xs text-gold-400 font-semibold mb-1">O QUE VOCÊ VAI FAZER:</div>
+                  <ul class="text-xs text-gray-300 space-y-1">
+                    <li>✓ Fazer perguntas ao vivo</li>
+                    <li>✓ Esclarecer dúvidas do curso</li>
+                    <li>✓ Conhecer outros membros</li>
+                  </ul>
+                </div>
+                <button class="w-full px-4 py-2 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 text-gold-400 rounded-lg font-semibold transition">
+                  Reservar Vaga no Passo 1
                 </button>
               </div>
 
-              {/* Sessão 2 */}
+              {/* PASSO 2 */}
               <div class="luxury-card p-6 rounded-xl border-l-4 border-blue-400">
-                <div class="flex items-start justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center">
-                      <i class="fas fa-chart-line text-blue-400"></i>
-                    </div>
-                    <div>
-                      <div class="font-bold text-lg">Deal Analysis</div>
-                      <div class="text-sm text-gray-400">Análise de Propriedades</div>
-                    </div>
+                <div class="flex items-start gap-4 mb-4">
+                  <div class="w-14 h-14 bg-blue-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-xl">2</span>
                   </div>
-                  <span class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 text-xs font-semibold rounded-full">
-                    Quinzenal
-                  </span>
+                  <div class="flex-1">
+                    <div class="font-bold text-xl mb-1">Deal Analysis</div>
+                    <div class="text-sm text-gray-400 mb-3">Analise propriedades reais com Juscelio</div>
+                    <span class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 text-xs font-semibold rounded-full">
+                      Quinzenal
+                    </span>
+                  </div>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm mb-4">
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-calendar w-5 text-gold-400"></i>
                     <span>2ª e 4ª semanas do mês</span>
@@ -303,34 +307,40 @@ loginApp.get('/mentoria', (c) => {
                   </div>
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-home w-5 text-gold-400"></i>
-                    <span>3-5 deals analisados</span>
+                    <span>3-5 deals analisados por sessão</span>
                   </div>
                 </div>
-                <button class="mt-4 w-full px-4 py-2 bg-blue-400 bg-opacity-20 hover:bg-opacity-30 text-blue-400 rounded-lg font-semibold transition">
-                  Enviar Meu Deal
+                <div class="bg-blue-400 bg-opacity-10 p-3 rounded-lg mb-3">
+                  <div class="text-xs text-blue-400 font-semibold mb-1">O QUE VOCÊ VAI FAZER:</div>
+                  <ul class="text-xs text-gray-300 space-y-1">
+                    <li>✓ Enviar suas propriedades para análise</li>
+                    <li>✓ Ver Juscelio avaliar deals ao vivo</li>
+                    <li>✓ Aprender critérios de seleção</li>
+                  </ul>
+                </div>
+                <button class="w-full px-4 py-2 bg-blue-400 bg-opacity-20 hover:bg-opacity-30 text-blue-400 rounded-lg font-semibold transition">
+                  Enviar Meu Deal - Passo 2
                 </button>
               </div>
 
-              {/* Sessão 3 */}
+              {/* PASSO 3 */}
               <div class="luxury-card p-6 rounded-xl border-l-4 border-purple-400">
-                <div class="flex items-start justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-purple-400 bg-opacity-20 rounded-full flex items-center justify-center">
-                      <i class="fas fa-graduation-cap text-purple-400"></i>
-                    </div>
-                    <div>
-                      <div class="font-bold text-lg">Masterclass</div>
-                      <div class="text-sm text-gray-400">Tópico Avançado</div>
-                    </div>
+                <div class="flex items-start gap-4 mb-4">
+                  <div class="w-14 h-14 bg-purple-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-xl">3</span>
                   </div>
-                  <span class="px-3 py-1 bg-purple-500 bg-opacity-20 text-purple-400 text-xs font-semibold rounded-full">
-                    Mensal
-                  </span>
+                  <div class="flex-1">
+                    <div class="font-bold text-xl mb-1">Masterclass</div>
+                    <div class="text-sm text-gray-400 mb-3">Aprenda tópicos avançados em profundidade</div>
+                    <span class="px-3 py-1 bg-purple-500 bg-opacity-20 text-purple-400 text-xs font-semibold rounded-full">
+                      Mensal
+                    </span>
+                  </div>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm mb-4">
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-calendar w-5 text-gold-400"></i>
-                    <span>Última Terça do mês</span>
+                    <span>Última Terça-feira do mês</span>
                   </div>
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-clock w-5 text-gold-400"></i>
@@ -341,28 +351,34 @@ loginApp.get('/mentoria', (c) => {
                     <span>Tópico rotativo mensal</span>
                   </div>
                 </div>
-                <button class="mt-4 w-full px-4 py-2 bg-purple-400 bg-opacity-20 hover:bg-opacity-30 text-purple-400 rounded-lg font-semibold transition">
-                  Ver Próximo Tópico
+                <div class="bg-purple-400 bg-opacity-10 p-3 rounded-lg mb-3">
+                  <div class="text-xs text-purple-400 font-semibold mb-1">TÓPICOS INCLUEM:</div>
+                  <ul class="text-xs text-gray-300 space-y-1">
+                    <li>✓ Estratégias de financiamento</li>
+                    <li>✓ Aspectos legais e contratos</li>
+                    <li>✓ Otimização fiscal</li>
+                  </ul>
+                </div>
+                <button class="w-full px-4 py-2 bg-purple-400 bg-opacity-20 hover:bg-opacity-30 text-purple-400 rounded-lg font-semibold transition">
+                  Ver Próximo Tópico - Passo 3
                 </button>
               </div>
 
-              {/* Sessão 4 */}
+              {/* PASSO 4 */}
               <div class="luxury-card p-6 rounded-xl border-l-4 border-red-400">
-                <div class="flex items-start justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-red-400 bg-opacity-20 rounded-full flex items-center justify-center">
-                      <i class="fas fa-handshake text-red-400"></i>
-                    </div>
-                    <div>
-                      <div class="font-bold text-lg">Office Hours</div>
-                      <div class="text-sm text-gray-400">Consultoria 1-on-1</div>
-                    </div>
+                <div class="flex items-start gap-4 mb-4">
+                  <div class="w-14 h-14 bg-red-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span class="text-black font-bold text-xl">4</span>
                   </div>
-                  <span class="px-3 py-1 bg-red-500 bg-opacity-20 text-red-400 text-xs font-semibold rounded-full">
-                    Premium
-                  </span>
+                  <div class="flex-1">
+                    <div class="font-bold text-xl mb-1">Office Hours</div>
+                    <div class="text-sm text-gray-400 mb-3">Consultoria personalizada 1-on-1</div>
+                    <span class="px-3 py-1 bg-red-500 bg-opacity-20 text-red-400 text-xs font-semibold rounded-full">
+                      Premium
+                    </span>
+                  </div>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm mb-4">
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-calendar w-5 text-gold-400"></i>
                     <span>Agendamento flexível</span>
@@ -373,12 +389,49 @@ loginApp.get('/mentoria', (c) => {
                   </div>
                   <div class="flex items-center text-gray-300">
                     <i class="fas fa-star w-5 text-gold-400"></i>
-                    <span>Membros Inner Circle</span>
+                    <span>Exclusivo Inner Circle</span>
                   </div>
                 </div>
-                <button class="mt-4 w-full px-4 py-2 bg-red-400 bg-opacity-20 hover:bg-opacity-30 text-red-400 rounded-lg font-semibold transition">
-                  Agendar Sessão
+                <div class="bg-red-400 bg-opacity-10 p-3 rounded-lg mb-3">
+                  <div class="text-xs text-red-400 font-semibold mb-1">BENEFÍCIOS EXCLUSIVOS:</div>
+                  <ul class="text-xs text-gray-300 space-y-1">
+                    <li>✓ Consultoria individual com Juscelio</li>
+                    <li>✓ Estratégia personalizada</li>
+                    <li>✓ Revisão completa do seu negócio</li>
+                  </ul>
+                </div>
+                <button class="w-full px-4 py-2 bg-red-400 bg-opacity-20 hover:bg-opacity-30 text-red-400 rounded-lg font-semibold transition">
+                  Agendar Sessão - Passo 4
                 </button>
+              </div>
+            </div>
+
+            {/* Rodapé com Fluxo do Processo */}
+            <div class="mt-8 bg-gradient-to-r from-gold-400 from-opacity-10 to-purple-400 to-opacity-10 p-6 rounded-xl border border-gold-400 border-opacity-30">
+              <div class="text-center mb-4">
+                <i class="fas fa-lightbulb text-gold-400 text-2xl mb-2"></i>
+                <div class="font-bold text-lg gradient-gold">Caminho Recomendado</div>
+              </div>
+              <div class="flex flex-wrap justify-center items-center gap-3 text-sm">
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 bg-gold-400 rounded-full flex items-center justify-center text-black font-bold text-xs">1</span>
+                  <span class="text-gray-300">Esclareça dúvidas</span>
+                </div>
+                <i class="fas fa-arrow-right text-gold-400 hidden md:block"></i>
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center text-black font-bold text-xs">2</span>
+                  <span class="text-gray-300">Analise deals</span>
+                </div>
+                <i class="fas fa-arrow-right text-gold-400 hidden md:block"></i>
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold text-xs">3</span>
+                  <span class="text-gray-300">Domine técnicas</span>
+                </div>
+                <i class="fas fa-arrow-right text-gold-400 hidden md:block"></i>
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center text-black font-bold text-xs">4</span>
+                  <span class="text-gray-300">Personalize estratégia</span>
+                </div>
               </div>
             </div>
           </div>
