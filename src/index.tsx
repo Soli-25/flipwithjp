@@ -196,6 +196,35 @@ app.get('/', (c) => {
           </div>
         </div>
 
+        {/* Banner de Lançamento do Livro */}
+        <div class="absolute bottom-0 left-0 right-0 pb-8">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 p-1 rounded-2xl shadow-2xl">
+              <div class="bg-black bg-opacity-95 p-6 rounded-xl">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gold-400 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
+                      <i class="fas fa-star text-black text-xl"></i>
+                    </div>
+                    <div>
+                      <div class="font-display text-xl font-bold gradient-gold">
+                        "The Million Dollar Code" - Lançamento em Breve!
+                      </div>
+                      <div class="text-sm text-gray-400">
+                        Livro físico disponível em 2025 • 200+ páginas de conhecimento premium
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#contato" class="px-6 py-3 bg-gold-400 text-black font-bold rounded-full hover:bg-gold-300 transition whitespace-nowrap">
+                    <i class="fas fa-bell mr-2"></i>
+                    Ser Notificado
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Efeito de partículas douradas */}
         <div class="absolute inset-0 pointer-events-none overflow-hidden">
           <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-gold-400 rounded-full opacity-30 animate-pulse"></div>

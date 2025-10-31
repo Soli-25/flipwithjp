@@ -195,6 +195,194 @@ loginApp.get('/mentoria', (c) => {
             </p>
           </div>
 
+          {/* Aviso Especial - Lançamento do Livro */}
+          <div class="mb-12 luxury-card p-8 rounded-2xl border-2 border-gold-400 bg-gradient-to-r from-gold-400 from-opacity-10 to-gold-300 to-opacity-5">
+            <div class="flex items-start gap-6 flex-col md:flex-row">
+              <div class="w-20 h-20 bg-gold-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-star text-black text-3xl"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3 flex-wrap">
+                  <span class="px-4 py-1 bg-gold-400 text-black text-xs font-bold rounded-full uppercase tracking-wider">
+                    🎉 Lançamento em Breve
+                  </span>
+                </div>
+                <h3 class="font-display text-3xl font-bold gradient-gold mb-3">
+                  "The Million Dollar Code"
+                </h3>
+                <p class="text-gray-300 text-lg mb-4">
+                  O livro físico de <strong>Juscelio Cruz</strong> está chegando! Sistema completo de flipping houses revelado em detalhes nunca antes compartilhados.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center">
+                  <div class="text-sm text-gray-400">
+                    <i class="fas fa-calendar-check mr-2 text-gold-400"></i>
+                    Previsão: 2025
+                  </div>
+                  <div class="text-sm text-gray-400">
+                    <i class="fas fa-book-open mr-2 text-gold-400"></i>
+                    200+ páginas de conteúdo premium
+                  </div>
+                  <a href="#contato" class="text-gold-400 hover:text-gold-300 font-semibold text-sm transition">
+                    Ser notificado no lançamento →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Agenda de Mentorias */}
+          <div class="mb-12">
+            <h2 class="font-display text-3xl font-bold gradient-gold mb-6 text-center">
+              <i class="fas fa-calendar-alt mr-3"></i>
+              Agenda de Mentorias Ao Vivo
+            </h2>
+            <p class="text-center text-gray-400 mb-8 max-w-3xl mx-auto">
+              Sessões exclusivas com Juscelio Cruz para Q&A, análise de deals e estratégias avançadas.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Sessão 1 */}
+              <div class="luxury-card p-6 rounded-xl border-l-4 border-gold-400">
+                <div class="flex items-start justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gold-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i class="fas fa-video text-gold-400"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold text-lg">Q&A Mensal</div>
+                      <div class="text-sm text-gray-400">Perguntas e Respostas</div>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 text-xs font-semibold rounded-full">
+                    Próxima
+                  </span>
+                </div>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-calendar w-5 text-gold-400"></i>
+                    <span>Primeira Sexta de cada mês</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-clock w-5 text-gold-400"></i>
+                    <span>19:00 - 21:00 (EST)</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-users w-5 text-gold-400"></i>
+                    <span>Máx 20 participantes</span>
+                  </div>
+                </div>
+                <button class="mt-4 w-full px-4 py-2 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 text-gold-400 rounded-lg font-semibold transition">
+                  Reservar Vaga
+                </button>
+              </div>
+
+              {/* Sessão 2 */}
+              <div class="luxury-card p-6 rounded-xl border-l-4 border-blue-400">
+                <div class="flex items-start justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i class="fas fa-chart-line text-blue-400"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold text-lg">Deal Analysis</div>
+                      <div class="text-sm text-gray-400">Análise de Propriedades</div>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 text-xs font-semibold rounded-full">
+                    Quinzenal
+                  </span>
+                </div>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-calendar w-5 text-gold-400"></i>
+                    <span>2ª e 4ª semanas do mês</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-clock w-5 text-gold-400"></i>
+                    <span>20:00 - 21:30 (EST)</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-home w-5 text-gold-400"></i>
+                    <span>3-5 deals analisados</span>
+                  </div>
+                </div>
+                <button class="mt-4 w-full px-4 py-2 bg-blue-400 bg-opacity-20 hover:bg-opacity-30 text-blue-400 rounded-lg font-semibold transition">
+                  Enviar Meu Deal
+                </button>
+              </div>
+
+              {/* Sessão 3 */}
+              <div class="luxury-card p-6 rounded-xl border-l-4 border-purple-400">
+                <div class="flex items-start justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-purple-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i class="fas fa-graduation-cap text-purple-400"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold text-lg">Masterclass</div>
+                      <div class="text-sm text-gray-400">Tópico Avançado</div>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 bg-purple-500 bg-opacity-20 text-purple-400 text-xs font-semibold rounded-full">
+                    Mensal
+                  </span>
+                </div>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-calendar w-5 text-gold-400"></i>
+                    <span>Última Terça do mês</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-clock w-5 text-gold-400"></i>
+                    <span>19:30 - 22:00 (EST)</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-brain w-5 text-gold-400"></i>
+                    <span>Tópico rotativo mensal</span>
+                  </div>
+                </div>
+                <button class="mt-4 w-full px-4 py-2 bg-purple-400 bg-opacity-20 hover:bg-opacity-30 text-purple-400 rounded-lg font-semibold transition">
+                  Ver Próximo Tópico
+                </button>
+              </div>
+
+              {/* Sessão 4 */}
+              <div class="luxury-card p-6 rounded-xl border-l-4 border-red-400">
+                <div class="flex items-start justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-red-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i class="fas fa-handshake text-red-400"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold text-lg">Office Hours</div>
+                      <div class="text-sm text-gray-400">Consultoria 1-on-1</div>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 bg-red-500 bg-opacity-20 text-red-400 text-xs font-semibold rounded-full">
+                    Premium
+                  </span>
+                </div>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-calendar w-5 text-gold-400"></i>
+                    <span>Agendamento flexível</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-clock w-5 text-gold-400"></i>
+                    <span>30-60 minutos</span>
+                  </div>
+                  <div class="flex items-center text-gray-300">
+                    <i class="fas fa-star w-5 text-gold-400"></i>
+                    <span>Membros Inner Circle</span>
+                  </div>
+                </div>
+                <button class="mt-4 w-full px-4 py-2 bg-red-400 bg-opacity-20 hover:bg-opacity-30 text-red-400 rounded-lg font-semibold transition">
+                  Agendar Sessão
+                </button>
+              </div>
+            </div>
+          </div>
+
           {/* Grid de Conteúdos */}
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
@@ -207,8 +395,8 @@ loginApp.get('/mentoria', (c) => {
               <p class="text-gray-400 mb-4">
                 O Código de Um Milhão de Dólares - Partes 1 e 2
               </p>
-              <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">
-                Acessar PDF →
+              <a href="/biblioteca" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">
+                Acessar Biblioteca →
               </a>
             </div>
 
