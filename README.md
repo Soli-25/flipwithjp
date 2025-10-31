@@ -16,11 +16,16 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 ### ✅ Seções Completas
 - [x] **Hero Section** - Apresentação impactante com estatísticas principais
 - [x] **Quote Section** - Frase de efeito do fundador
+- [x] **Mentoria Master Flip** - 5 Pilares da Transformação
+- [x] **Anatomia de um Deal Milionário** - Protocolo de Prospecção JP completo
+- [x] **Sistema de Prospecção** - 5 Fases do protocolo com ferramentas e exemplos
+- [x] **Critérios de Seleção de Elite** - 4 Pilares (Crime, Escolas, Crescimento, Vendas)
 - [x] **Sobre** - Missão, valores e credenciais da empresa
 - [x] **Metodologia** - Timeline de 8 semanas detalhada
 - [x] **Resultados** - Case studies reais com ROI comprovado
 - [x] **Projeção de ROI** - Calculadora de cenários conservador e agressivo
 - [x] **7 Princípios** - Fundamentos do sucesso
+- [x] **12 Regras de Ouro** - Regras inegociáveis do flipping profissional
 - [x] **CTA/Contato** - Call-to-action para investidores
 - [x] **Footer** - Links rápidos e informações
 
