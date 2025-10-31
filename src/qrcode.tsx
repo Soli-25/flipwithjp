@@ -191,14 +191,36 @@ qrcodeApp.get('/verify', (c) => {
             <div id="alertContainer"></div>
           </form>
           
-          <div class="mt-8 pt-6 border-t border-gray-800 text-center">
-            <p class="text-gray-500 text-sm">
-              <i class="fas fa-info-circle mr-2"></i>
-              Apenas membros com token válido podem acessar
-            </p>
-            <a href="/admin/qr" class="text-gold-400 text-sm mt-2 inline-block hover:underline">
-              <i class="fas fa-cog mr-1"></i>Gerar Novo Token (Admin)
-            </a>
+          <div class="mt-8 pt-6 border-t border-gray-800">
+            <div class="text-center mb-6">
+              <p class="text-gray-500 text-sm mb-4">
+                <i class="fas fa-info-circle mr-2"></i>
+                Apenas membros com token válido podem acessar
+              </p>
+              <a href="/admin/qr" class="text-gold-400 text-sm inline-block hover:underline">
+                <i class="fas fa-cog mr-1"></i>Gerar Novo Token (Admin)
+              </a>
+            </div>
+            
+            <div class="mt-6 p-4 bg-gradient-to-r from-gold-400 from-opacity-10 to-gold-300 to-opacity-5 rounded-lg border border-gold-400 border-opacity-30">
+              <div class="text-sm text-gold-400 font-semibold mb-3 text-center">
+                <i class="fas fa-sparkles mr-2"></i>Novidades Exclusivas para Membros
+              </div>
+              <ul class="space-y-2 text-xs text-gray-400">
+                <li class="flex items-start">
+                  <i class="fas fa-book text-gold-400 mr-2 mt-0.5"></i>
+                  <span><strong class="text-white">"The Million Dollar Code"</strong> - Livro físico lançando em 2025</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-calendar text-gold-400 mr-2 mt-0.5"></i>
+                  <span><strong class="text-white">4 tipos de mentorias ao vivo</strong> - Q&A, Deal Analysis, Masterclass, Office Hours</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-library text-gold-400 mr-2 mt-0.5"></i>
+                  <span><strong class="text-white">Biblioteca Premium</strong> - 5 documentos (150K+ palavras)</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

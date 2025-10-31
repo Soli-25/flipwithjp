@@ -173,6 +173,13 @@ bibliotecaApp.get('/biblioteca', (c) => {
                 FAQ completa com todas as perguntas que investidores iniciantes fazem.
               </p>
               
+              <div class="mb-4 p-3 bg-blue-500 bg-opacity-10 rounded-lg border border-blue-500 border-opacity-30">
+                <div class="text-xs text-blue-400">
+                  <i class="fas fa-calendar mr-2"></i>
+                  <strong>NOVO:</strong> Inclui agenda completa de mentorias ao vivo!
+                </div>
+              </div>
+              
               <div class="flex flex-wrap gap-2 mb-6">
                 <span class="text-xs px-2 py-1 bg-gray-800 rounded text-gray-400">Capital Zero</span>
                 <span class="text-xs px-2 py-1 bg-gray-800 rounded text-gray-400">Wholesaling</span>
