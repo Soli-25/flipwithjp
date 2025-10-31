@@ -158,48 +158,49 @@ app.get('/', (c) => {
               </p>
               
               {/* Foto do JP */}
-              <div class="flex items-center justify-center lg:justify-start gap-4 mb-8">
-                <div class="jp-photo rounded-full w-20 h-20 overflow-hidden">
+              <div class="flex items-center justify-center lg:justify-start gap-4 mb-10">
+                <div class="jp-photo rounded-full w-24 h-24 overflow-hidden border-4 border-gold-400 border-opacity-30">
                   <img src="/static/jp-photo.jpg" alt="Juscelio Cruz" class="w-full h-full object-cover" />
                 </div>
                 <div class="text-left">
-                  <div class="font-display text-xl font-bold gradient-gold">Juscelio Cruz</div>
+                  <div class="font-display text-2xl font-bold gradient-gold">Juscelio Cruz</div>
                   <div class="text-sm text-gray-400">Founder & CEO, JP Group Construction</div>
-                  <div class="text-xs text-gold-400 mt-1">
+                  <div class="text-sm text-gold-400 mt-2">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <span class="ml-2">10+ Anos de Experiência</span>
+                    <span class="ml-2 font-semibold">10+ Anos de Experiência</span>
                   </div>
                 </div>
               </div>
               
-              <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                <a href="#contato" class="btn-primary px-8 py-4 rounded-full text-base font-semibold shadow-lg">
-                  <i class="fas fa-gem mr-2"></i>
-                  Acessar Mentoria Elite
+              {/* Botões de Ação com mais espaçamento */}
+              <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-16">
+                <a href="#passo2" class="btn-primary px-10 py-5 rounded-full text-lg font-semibold shadow-2xl hover:scale-105 transition-transform">
+                  <i class="fas fa-play-circle mr-3"></i>
+                  Começar Agora
                 </a>
-                <a href="#sistema" class="btn-secondary px-8 py-4 rounded-full text-base font-semibold">
-                  <i class="fas fa-book-open mr-2"></i>
-                  Ver Sistema Completo
+                <a href="/mentoria" class="btn-secondary px-10 py-5 rounded-full text-lg font-semibold hover:scale-105 transition-transform">
+                  <i class="fas fa-crown mr-3"></i>
+                  Ver Mentoria
                 </a>
               </div>
 
-              {/* Stats Compactos */}
-              <div class="grid grid-cols-3 gap-4">
+              {/* Stats Compactos com mais destaque */}
+              <div class="grid grid-cols-3 gap-6 max-w-md">
                 <div class="text-center lg:text-left">
-                  <div class="text-3xl font-black gradient-gold mb-1">30-100%</div>
-                  <div class="text-xs text-gray-400">ROI Projetado</div>
+                  <div class="text-4xl font-black gradient-gold mb-2">30-100%</div>
+                  <div class="text-sm text-gray-400">ROI Projetado</div>
                 </div>
                 <div class="text-center lg:text-left">
-                  <div class="text-3xl font-black gradient-gold mb-1">8 Sem.</div>
-                  <div class="text-xs text-gray-400">Timeline</div>
+                  <div class="text-4xl font-black gradient-gold mb-2">8 Sem.</div>
+                  <div class="text-sm text-gray-400">Timeline</div>
                 </div>
                 <div class="text-center lg:text-left">
-                  <div class="text-3xl font-black gradient-gold mb-1">$10M+</div>
-                  <div class="text-xs text-gray-400">Em Deals</div>
+                  <div class="text-4xl font-black gradient-gold mb-2">$10M+</div>
+                  <div class="text-sm text-gray-400">Em Deals</div>
                 </div>
               </div>
             </div>
@@ -250,35 +251,6 @@ app.get('/', (c) => {
           </div>
         </div>
 
-        {/* Banner de Lançamento do Livro */}
-        <div class="absolute bottom-0 left-0 right-0 pb-8">
-          <div class="max-w-7xl mx-auto px-6">
-            <div class="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 p-1 rounded-2xl shadow-2xl">
-              <div class="bg-black bg-opacity-95 p-6 rounded-xl">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-gold-400 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
-                      <i class="fas fa-star text-black text-xl"></i>
-                    </div>
-                    <div>
-                      <div class="font-display text-xl font-bold gradient-gold">
-                        "The Million Dollar Code" - Lançamento em Breve!
-                      </div>
-                      <div class="text-sm text-gray-400">
-                        Livro físico disponível em 2025 • 200+ páginas de conhecimento premium
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#contato" class="px-6 py-3 bg-gold-400 text-black font-bold rounded-full hover:bg-gold-300 transition whitespace-nowrap">
-                    <i class="fas fa-bell mr-2"></i>
-                    Ser Notificado
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Efeito de partículas douradas */}
         <div class="absolute inset-0 pointer-events-none overflow-hidden">
           <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-gold-400 rounded-full opacity-30 animate-pulse"></div>
@@ -286,15 +258,47 @@ app.get('/', (c) => {
           <div class="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-gold-400 rounded-full opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
           <div class="absolute top-2/3 right-1/3 w-1 h-1 bg-gold-400 rounded-full opacity-50 animate-pulse" style="animation-delay: 1.5s;"></div>
         </div>
+      </section>
 
-        {/* Botão Próximo Passo */}
-        <div class="absolute bottom-24 left-0 right-0">
-          <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="#passo2" class="inline-flex items-center gap-3 px-8 py-4 bg-gold-400 bg-opacity-20 hover:bg-opacity-30 border-2 border-gold-400 text-gold-400 rounded-full font-bold transition">
-              <span>PRÓXIMO PASSO: O Sistema Million Dollar</span>
-              <i class="fas fa-arrow-down animate-bounce"></i>
-            </a>
+      {/* Banner de Lançamento do Livro - SEÇÃO SEPARADA COM MAIS ESPAÇO */}
+      <section class="section-compact gradient-dark">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+          <div class="bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 p-1 rounded-3xl shadow-2xl">
+            <div class="bg-black bg-opacity-95 p-10 rounded-3xl">
+              <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-6 flex-1">
+                  <div class="w-20 h-20 bg-gold-400 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse shadow-lg">
+                    <i class="fas fa-star text-black text-3xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <div class="font-display text-2xl md:text-3xl font-bold gradient-gold mb-3">
+                      "The Million Dollar Code"
+                    </div>
+                    <div class="text-xl font-semibold text-gold-400 mb-2">
+                      Lançamento em Breve - 2025
+                    </div>
+                    <div class="text-base text-gray-300">
+                      Livro físico com 200+ páginas de conhecimento premium sobre Flipping Houses
+                    </div>
+                  </div>
+                </div>
+                <a href="#contato" class="px-10 py-5 bg-gold-400 text-black text-lg font-bold rounded-full hover:bg-gold-300 hover:scale-105 transition-all shadow-xl whitespace-nowrap">
+                  <i class="fas fa-bell mr-3"></i>
+                  Ser Notificado
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Botão Próximo Passo - SEÇÃO SEPARADA */}
+      <section class="section-compact">
+        <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+          <a href="#passo2" class="inline-flex items-center gap-4 px-12 py-6 bg-gold-400 bg-opacity-10 hover:bg-opacity-20 border-2 border-gold-400 text-gold-400 rounded-full text-xl font-bold transition-all hover:scale-105 shadow-lg">
+            <span>PRÓXIMO PASSO: O Sistema Million Dollar</span>
+            <i class="fas fa-arrow-down animate-bounce text-2xl"></i>
+          </a>
         </div>
       </section>
 

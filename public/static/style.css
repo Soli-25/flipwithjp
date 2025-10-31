@@ -255,6 +255,25 @@ html {
   z-index: 1;
 }
 
+/* Seções com espaçamentos otimizados */
+.section-compact {
+  padding: 2rem 0;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-compact {
+    padding: 1.5rem 0;
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
+}
+
 /* Seção de números impressionantes */
 .number-display {
   font-size: clamp(2rem, 5vw, 4rem);
