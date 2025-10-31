@@ -16,12 +16,13 @@ app.get('/', (c) => {
         <div class="max-w-7xl mx-auto px-6 py-4">
           <div class="flex justify-between items-center">
             <div class="font-display text-2xl font-bold gradient-gold">JP GROUP</div>
-            <div class="hidden md:flex space-x-8">
-              <a href="#sobre" class="text-gray-300 hover:text-gold-400 transition">Sobre</a>
-              <a href="#metodologia" class="text-gray-300 hover:text-gold-400 transition">Metodologia</a>
-              <a href="#resultados" class="text-gray-300 hover:text-gold-400 transition">Resultados</a>
-              <a href="#roi" class="text-gray-300 hover:text-gold-400 transition">ROI</a>
-              <a href="#contato" class="btn-primary px-6 py-2 rounded-full">Contato</a>
+            <div class="hidden md:flex space-x-6">
+              <a href="#sobre" class="text-gray-300 hover:text-gold-400 transition text-sm">Sobre</a>
+              <a href="#sistema" class="text-gray-300 hover:text-gold-400 transition text-sm">Sistema</a>
+              <a href="#criterios" class="text-gray-300 hover:text-gold-400 transition text-sm">Critérios</a>
+              <a href="#metodologia" class="text-gray-300 hover:text-gold-400 transition text-sm">Metodologia</a>
+              <a href="#resultados" class="text-gray-300 hover:text-gold-400 transition text-sm">Resultados</a>
+              <a href="#contato" class="btn-primary px-6 py-2 rounded-full text-sm">Contato</a>
             </div>
             <button class="md:hidden text-gold-400" onclick="toggleMenu()">
               <i class="fas fa-bars text-2xl"></i>
@@ -32,11 +33,12 @@ app.get('/', (c) => {
 
       {/* Mobile Menu */}
       <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-95 z-40 md:hidden">
-        <div class="flex flex-col items-center justify-center h-full space-y-8">
-          <a href="#sobre" class="text-2xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Sobre</a>
-          <a href="#metodologia" class="text-2xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Metodologia</a>
-          <a href="#resultados" class="text-2xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Resultados</a>
-          <a href="#roi" class="text-2xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">ROI</a>
+        <div class="flex flex-col items-center justify-center h-full space-y-6">
+          <a href="#sobre" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Sobre</a>
+          <a href="#sistema" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Sistema</a>
+          <a href="#criterios" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Critérios</a>
+          <a href="#metodologia" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Metodologia</a>
+          <a href="#resultados" class="text-xl text-gray-300 hover:text-gold-400" onclick="toggleMenu()">Resultados</a>
           <a href="#contato" class="btn-primary px-8 py-3 rounded-full text-xl" onclick="toggleMenu()">Contato</a>
         </div>
       </div>
@@ -52,7 +54,10 @@ app.get('/', (c) => {
               O CÓDIGO DE UM<br />
               <span class="gradient-gold">MILHÃO DE DÓLARES</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-xl text-gray-400 mb-4 max-w-4xl mx-auto leading-relaxed font-semibold">
+              Processos e Estratégias Secretas do Mercado Imobiliário Revelados por Quem Domina o Flipping House há Mais de uma Década
+            </p>
+            <p class="text-lg md:text-xl text-gray-500 mb-8 max-w-3xl mx-auto">
               Transforme propriedades desvalorizadas em lucros extraordinários com o sistema testado e comprovado da JP Group Construction
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-16">
@@ -94,6 +99,318 @@ app.get('/', (c) => {
           <p class="text-gray-400 text-lg">
             - Juscelio Cruz (JP), Founder & CEO, JP Group Construction
           </p>
+        </div>
+      </section>
+
+      {/* Mentoria Master Flip Section */}
+      <section class="section">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+              MENTORIA MASTER FLIP
+            </div>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
+              Onde o Conhecimento se<br />Transforma em Patrimônio
+            </h2>
+            <div class="w-20 h-1 gradient-gold-bg mx-auto mb-8"></div>
+            <p class="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              O verdadeiro "Sucesso do Cliente" em uma mentoria de alto nível transcende a simples transmissão de informações. 
+              Trata-se de uma jornada transformadora onde cada mentorado não apenas absorve conhecimento, mas o converte em resultados tangíveis e lucrativos.
+            </p>
+          </div>
+
+          {/* Os 5 Pilares da Transformação */}
+          <div class="max-w-5xl mx-auto">
+            <h3 class="font-display text-3xl font-bold mb-12 text-center gradient-gold">
+              Os Cinco Pilares da Transformação
+            </h3>
+
+            <div class="space-y-6">
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-start">
+                  <div class="text-gold-400 text-5xl font-black mr-6 flex-shrink-0">1</div>
+                  <div>
+                    <h4 class="font-display text-2xl font-bold mb-3">Arquitetura de Objetivos Estratégicos</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                      Desde o primeiro momento, trabalhamos na construção de metas claras, mensuráveis e, acima de tudo, alcançáveis. 
+                      Não se trata de sonhos vagos, mas de <span class="text-gold-400 font-semibold">blueprints financeiros precisos</span> que orientam cada decisão de investimento.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-start">
+                  <div class="text-gold-400 text-5xl font-black mr-6 flex-shrink-0">2</div>
+                  <div>
+                    <h4 class="font-display text-2xl font-bold mb-3">Mentoria Ativa e Feedback Contínuo</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                      O acompanhamento não é esporádico — é sistemático, estratégico e orientado por resultados. 
+                      Cada passo é monitorado, cada decisão é refinada, garantindo que você permaneça no <span class="text-gold-400 font-semibold">caminho da lucratividade</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-start">
+                  <div class="text-gold-400 text-5xl font-black mr-6 flex-shrink-0">3</div>
+                  <div>
+                    <h4 class="font-display text-2xl font-bold mb-3">Personalização Estratégica Absoluta</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                      Diferentemente de cursos genéricos, adaptamos cada estratégia, cada análise e cada conselho à sua realidade específica. 
+                      Seu capital, seu mercado, suas circunstâncias — <span class="text-gold-400 font-semibold">tudo é considerado</span> na formulação do seu plano de ação.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-start">
+                  <div class="text-gold-400 text-5xl font-black mr-6 flex-shrink-0">4</div>
+                  <div>
+                    <h4 class="font-display text-2xl font-bold mb-3">Suporte Pós-Mentoria: O Diferencial Competitivo</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                      O fim da mentoria formal não significa o fim do suporte. Você terá acesso a recursos, atualizações de mercado e 
+                      uma <span class="text-gold-400 font-semibold">rede de contatos</span> que continuará impulsionando seu crescimento exponencial.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="luxury-card p-8 rounded-2xl border-2 border-gold-400">
+                <div class="flex items-start">
+                  <div class="text-gold-400 text-5xl font-black mr-6 flex-shrink-0">5</div>
+                  <div>
+                    <h4 class="font-display text-2xl font-bold mb-3">Métricas de Impacto Real</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                      Avaliamos regularmente não apenas o que você aprendeu, mas <span class="text-white font-bold">o que você conquistou</span>. 
+                      Lucro real, deals fechados, ROI positivo — <span class="text-gold-400 font-semibold">esses são os únicos KPIs que importam</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA da Mentoria */}
+            <div class="mt-12 text-center luxury-card p-10 rounded-2xl bg-gradient-to-br from-gold-400 bg-opacity-5">
+              <p class="text-xl md:text-2xl font-display font-bold mb-4 leading-relaxed">
+                A transformação que você experimentará será medida não em certificados ou diplomas, 
+                mas em <span class="gradient-gold">dólares, propriedades e liberdade financeira</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sistema de Prospecção Section */}
+      <section id="sistema" class="section gradient-dark">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+              CAPÍTULO 1
+            </div>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
+              A Anatomia de um<br />Deal Milionário
+            </h2>
+            <div class="w-20 h-1 gradient-gold-bg mx-auto mb-8"></div>
+            <p class="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              O mercado imobiliário americano movimenta trilhões de dólares anualmente, mas apenas uma fração de investidores 
+              domina a arte de identificar, analisar e executar deals verdadeiramente lucrativos. 
+              O que separa os amadores dos profissionais não é sorte — <span class="text-gold-400 font-semibold">é sistema, disciplina e conhecimento de insider</span>.
+            </p>
+          </div>
+
+          {/* O Protocolo de Prospecção JP */}
+          <div class="mb-20">
+            <h3 class="font-display text-3xl font-bold mb-12 text-center gradient-gold">
+              O Protocolo de Prospecção JP: Encontrando Diamantes Brutos
+            </h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Fase 1: Zillow Setup */}
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 rounded-full bg-gold-400 bg-opacity-20 flex items-center justify-center mr-4">
+                    <span class="text-gold-400 font-black text-xl">1</span>
+                  </div>
+                  <h4 class="font-display text-2xl font-bold">Configuração Zillow.com</h4>
+                </div>
+                <ul class="space-y-4 text-gray-400">
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Home Type:</strong> Apenas "Houses"</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">HOA Fee:</strong> Marque "No HOA Fee"</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Square Footage:</strong> 1.000 a 2.000 sqft</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Days on Zillow:</strong> 1-7 dias (máximo)</span>
+                  </li>
+                </ul>
+                <div class="mt-6 p-4 bg-gold-400 bg-opacity-5 rounded-lg border border-gold-400 border-opacity-30">
+                  <p class="text-sm text-gray-400">
+                    <i class="fas fa-lightbulb text-gold-400 mr-2"></i>
+                    <strong class="text-white">Por que esses filtros?</strong> Cada parâmetro foi testado em centenas de transações e otimizado para maximizar ROI.
+                  </p>
+                </div>
+              </div>
+
+              {/* Fase 2: Due Diligence */}
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 rounded-full bg-gold-400 bg-opacity-20 flex items-center justify-center mr-4">
+                    <span class="text-gold-400 font-black text-xl">2</span>
+                  </div>
+                  <h4 class="font-display text-2xl font-bold">Due Diligence (QPublic)</h4>
+                </div>
+                <ul class="space-y-4 text-gray-400">
+                  <li class="flex items-start">
+                    <i class="fas fa-search text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Parcel Number:</strong> O "CPF" da propriedade</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-search text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Zoning Class:</strong> R3, R4 (potencial de subdivisão)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-search text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Appraised Value:</strong> vs. valor real de mercado</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-search text-gold-400 mr-3 mt-1"></i>
+                    <span><strong class="text-white">Sqft com A/C:</strong> Área climatizada que conta</span>
+                  </li>
+                </ul>
+                <div class="mt-6 p-4 bg-red-500 bg-opacity-10 rounded-lg border border-red-500 border-opacity-30">
+                  <p class="text-sm text-gray-400">
+                    <i class="fas fa-exclamation-triangle text-red-400 mr-2"></i>
+                    <strong class="text-red-400">ALERTA:</strong> Casa no centro do lote pode inviabilizar subdivisão, limitando potencial de lucro.
+                  </p>
+                </div>
+              </div>
+
+              {/* Fase 3: CMA */}
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 rounded-full bg-gold-400 bg-opacity-20 flex items-center justify-center mr-4">
+                    <span class="text-gold-400 font-black text-xl">3</span>
+                  </div>
+                  <h4 class="font-display text-2xl font-bold">Análise de Mercado (CMA)</h4>
+                </div>
+                <div class="space-y-4 text-gray-400">
+                  <p>Retorne ao Zillow e execute análise comparativa meticulosa:</p>
+                  <ul class="space-y-3">
+                    <li class="flex items-start">
+                      <i class="fas fa-chart-line text-gold-400 mr-3 mt-1"></i>
+                      <span>Mude filtro para <strong class="text-white">"SOLD"</strong> (transações reais)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-chart-line text-gold-400 mr-3 mt-1"></i>
+                      <span>Identifique <strong class="text-white">3-5 comparáveis</strong> em 0.5 milhas</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-chart-line text-gold-400 mr-3 mt-1"></i>
+                      <span>Ajuste por diferenças (terreno, garagens, banheiros)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-6 p-4 bg-blue-500 bg-opacity-10 rounded-lg border border-blue-500 border-opacity-30">
+                  <p class="text-sm text-gray-400">
+                    <i class="fas fa-calculator text-blue-400 mr-2"></i>
+                    <strong class="text-blue-400">Fórmula ARV:</strong> Preço Comp - Ajustes = After Repair Value
+                  </p>
+                </div>
+              </div>
+
+              {/* Fase 4: Calculadora */}
+              <div class="luxury-card p-8 rounded-2xl">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 rounded-full bg-gold-400 bg-opacity-20 flex items-center justify-center mr-4">
+                    <span class="text-gold-400 font-black text-xl">4</span>
+                  </div>
+                  <h4 class="font-display text-2xl font-bold">House Flip Calculator</h4>
+                </div>
+                <div class="space-y-3 text-gray-400 text-sm">
+                  <div class="flex justify-between py-2 border-b border-gray-800">
+                    <span>Preço de Compra</span>
+                    <span class="text-white font-semibold">$149,900</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-800">
+                    <span>Custo de Reformas</span>
+                    <span class="text-white font-semibold">$90,000</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-800">
+                    <span>Fechamento + Custos</span>
+                    <span class="text-white font-semibold">$18,600</span>
+                  </div>
+                  <div class="flex justify-between py-2 border-b border-gray-800 border-gold-400">
+                    <span class="font-bold">Total Investido</span>
+                    <span class="text-white font-bold">$258,500</span>
+                  </div>
+                  <div class="flex justify-between py-3 bg-gold-400 bg-opacity-10 rounded-lg px-4 mt-4">
+                    <span class="font-bold">ARV (Venda)</span>
+                    <span class="gradient-gold font-black text-lg">$360,000</span>
+                  </div>
+                  <div class="flex justify-between py-3 bg-green-500 bg-opacity-10 rounded-lg px-4">
+                    <span class="font-bold">Lucro Líquido</span>
+                    <span class="text-green-400 font-black text-lg">$101,500</span>
+                  </div>
+                  <div class="text-center py-2">
+                    <span class="text-gold-400 font-bold text-2xl">ROI: 39.26%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Custos de Reforma */}
+            <div class="mt-12 luxury-card p-8 rounded-2xl">
+              <h4 class="font-display text-2xl font-bold mb-6 text-center">Fórmula de Custo de Reforma</h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-blue-500 bg-opacity-5 rounded-xl border border-blue-500 border-opacity-30">
+                  <div class="text-blue-400 text-3xl font-bold mb-2">$30-50</div>
+                  <div class="text-gray-400 text-sm mb-2">por sqft</div>
+                  <div class="text-white font-semibold mb-3">Reforma Leve</div>
+                  <div class="text-gray-500 text-xs">Pintura, piso, bancadas, aparelhos</div>
+                </div>
+                <div class="text-center p-6 bg-gold-400 bg-opacity-5 rounded-xl border border-gold-400 border-opacity-30">
+                  <div class="text-gold-400 text-3xl font-bold mb-2">$50-70</div>
+                  <div class="text-gray-400 text-sm mb-2">por sqft</div>
+                  <div class="text-white font-semibold mb-3">Reforma Média</div>
+                  <div class="text-gray-500 text-xs">+ portas, janelas, A/C, water heater</div>
+                </div>
+                <div class="text-center p-6 bg-red-500 bg-opacity-5 rounded-xl border border-red-500 border-opacity-30">
+                  <div class="text-red-400 text-3xl font-bold mb-2">$70-90</div>
+                  <div class="text-gray-400 text-sm mb-2">por sqft</div>
+                  <div class="text-white font-semibold mb-3">Reforma Completa</div>
+                  <div class="text-gray-500 text-xs">+ telhado, siding, elétrica, hidráulica, estrutura</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* A Regra de Ouro */}
+          <div class="max-w-4xl mx-auto text-center luxury-card p-10 rounded-3xl border-2 border-gold-400">
+            <div class="text-gold-400 text-5xl mb-6">
+              <i class="fas fa-crown"></i>
+            </div>
+            <h3 class="font-display text-3xl md:text-4xl font-bold mb-6">
+              A Regra de Ouro do JP
+            </h3>
+            <blockquote class="text-2xl md:text-3xl font-display font-bold mb-4 leading-tight">
+              "Você não ganha dinheiro na venda.<br />Você ganha dinheiro na <span class="gradient-gold">COMPRA</span>."
+            </blockquote>
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Esta frase não é um clichê — é a diferença entre lucros de 5 dígitos e prejuízos devastadores. 
+              O mercado define o preço de venda. Sua habilidade de comprar abaixo do valor real define seu lucro.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -169,6 +486,268 @@ app.get('/', (c) => {
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Critérios de Seleção Section */}
+      <section id="criterios" class="section">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <div class="inline-block mb-4 px-6 py-2 bg-gold-400 bg-opacity-10 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+              CAPÍTULO 2
+            </div>
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">
+              Critérios de Seleção<br />de Elite
+            </h2>
+            <div class="w-20 h-1 gradient-gold-bg mx-auto mb-8"></div>
+            <p class="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              A diferença entre investidores amadores e profissionais está na <span class="text-gold-400 font-semibold">disciplina de seleção</span>. 
+              Amadores se deixam levar pela emoção de "uma boa oferta". Profissionais operam com critérios objetivos, mensuráveis e não negociáveis.
+            </p>
+          </div>
+
+          {/* Os 4 Pilares */}
+          <h3 class="font-display text-3xl font-bold mb-12 text-center gradient-gold">
+            Os 4 Pilares da Due Diligence Avançada
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {/* Pilar 1: Criminalidade */}
+            <div class="luxury-card p-8 rounded-2xl">
+              <div class="flex items-center mb-6">
+                <div class="w-14 h-14 rounded-full bg-red-500 bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-shield-alt text-red-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-2xl font-bold">Análise de Criminalidade</h4>
+                  <p class="text-gray-500 text-sm">crimemapping.com</p>
+                </div>
+              </div>
+              
+              <p class="text-gray-400 mb-6">
+                Dados forenses sobre criminalidade podem <span class="text-white font-semibold">valorizar ou desvalorizar uma propriedade em até 30%</span>.
+              </p>
+
+              <div class="space-y-4">
+                <div class="p-4 bg-green-500 bg-opacity-10 rounded-lg border border-green-500 border-opacity-30">
+                  <div class="flex items-center mb-2">
+                    <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                    <span class="font-bold text-green-400">Baixo Impacto (Aceitável)</span>
+                  </div>
+                  <p class="text-sm text-gray-400">DUI, Fraude - Incidentes isolados, impacto mínimo</p>
+                </div>
+
+                <div class="p-4 bg-yellow-500 bg-opacity-10 rounded-lg border border-yellow-500 border-opacity-30">
+                  <div class="flex items-center mb-2">
+                    <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                    <span class="font-bold text-yellow-400">Médio Impacto (Atenção)</span>
+                  </div>
+                  <p class="text-sm text-gray-400">Furtos - Se recorrentes, indicam problemas sistemáticos</p>
+                </div>
+
+                <div class="p-4 bg-red-500 bg-opacity-10 rounded-lg border border-red-500 border-opacity-30">
+                  <div class="flex items-center mb-2">
+                    <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                    <span class="font-bold text-red-400">Alto Impacto (EVITAR)</span>
+                  </div>
+                  <p class="text-sm text-gray-400">Assaltos, Robbery - Na mesma rua = <strong>deal killer</strong></p>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-gold-400 bg-opacity-5 rounded-lg border border-gold-400 border-opacity-30">
+                <p class="text-sm text-gray-400">
+                  <i class="fas fa-star text-gold-400 mr-2"></i>
+                  <strong class="text-white">Regra de Ouro:</strong> Crimes violentos &lt; 0.2 milhas = deal killer. &gt; 2 milhas = impacto negligenciável.
+                </p>
+              </div>
+            </div>
+
+            {/* Pilar 2: Escolas */}
+            <div class="luxury-card p-8 rounded-2xl">
+              <div class="flex items-center mb-6">
+                <div class="w-14 h-14 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-graduation-cap text-blue-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-2xl font-bold">Rating de Escolas</h4>
+                  <p class="text-gray-500 text-sm">greatschools.org</p>
+                </div>
+              </div>
+
+              <p class="text-gray-400 mb-6">
+                O multiplicador de valor oculto que define velocidade de venda e pricing power.
+              </p>
+
+              <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 bg-green-500 bg-opacity-5 rounded-lg border border-green-500 border-opacity-30">
+                  <div>
+                    <div class="font-bold text-green-400 mb-1">Rating 8-10</div>
+                    <div class="text-sm text-gray-400">Escolas excelentes</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-green-400 font-bold text-xl">+15-25%</div>
+                    <div class="text-xs text-gray-500">valorização</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-gray-700 bg-opacity-30 rounded-lg">
+                  <div>
+                    <div class="font-bold text-gray-300 mb-1">Rating 4-7</div>
+                    <div class="text-sm text-gray-400">Mercado neutro</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-gray-400 font-bold text-xl">±0%</div>
+                    <div class="text-xs text-gray-500">estável</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-red-500 bg-opacity-5 rounded-lg border border-red-500 border-opacity-30">
+                  <div>
+                    <div class="font-bold text-red-400 mb-1">Rating 1-3</div>
+                    <div class="text-sm text-gray-400">Escolas fracas</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-red-400 font-bold text-xl">-10-20%</div>
+                    <div class="text-xs text-gray-500">desvalorização</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-blue-500 bg-opacity-10 rounded-lg border border-blue-500 border-opacity-30">
+                <p class="text-sm text-gray-400">
+                  <i class="fas fa-clock text-blue-400 mr-2"></i>
+                  <strong class="text-white">Impacto:</strong> Escolas 8+ reduzem tempo de venda de 90 dias para 30 dias e permitem pricing agressivo.
+                </p>
+              </div>
+            </div>
+
+            {/* Pilar 3: Áreas em Crescimento */}
+            <div class="luxury-card p-8 rounded-2xl">
+              <div class="flex items-center mb-6">
+                <div class="w-14 h-14 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-chart-line text-green-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-2xl font-bold">Áreas em Crescimento</h4>
+                  <p class="text-gray-500 text-sm">Surfando a onda de desenvolvimento</p>
+                </div>
+              </div>
+
+              <p class="text-gray-400 mb-6">
+                Identifique no Google Maps e portais locais:
+              </p>
+
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start text-gray-400">
+                  <i class="fas fa-shopping-cart text-green-400 mr-3 mt-1"></i>
+                  <span>Novos shopping centers em construção (raio de 5 milhas)</span>
+                </li>
+                <li class="flex items-start text-gray-400">
+                  <i class="fas fa-subway text-green-400 mr-3 mt-1"></i>
+                  <span>Planejamento de estações de metrô/transporte público</span>
+                </li>
+                <li class="flex items-start text-gray-400">
+                  <i class="fas fa-building text-green-400 mr-3 mt-1"></i>
+                  <span>Desenvolvimento de condomínios médio-alto padrão</span>
+                </li>
+                <li class="flex items-start text-gray-400">
+                  <i class="fas fa-briefcase text-green-400 mr-3 mt-1"></i>
+                  <span>Chegada de grandes empregadores (Amazon, Google, etc)</span>
+                </li>
+              </ul>
+
+              <div class="p-4 bg-gold-400 bg-opacity-5 rounded-lg border border-gold-400 border-opacity-30">
+                <p class="text-sm text-gray-400">
+                  <i class="fas fa-lightbulb text-gold-400 mr-2"></i>
+                  <strong class="text-white">Timing:</strong> Compre 12-24 meses ANTES do boom. Tarde = preços inflados. Cedo = capital preso.
+                </p>
+              </div>
+            </div>
+
+            {/* Pilar 4: Vendas Recentes */}
+            <div class="luxury-card p-8 rounded-2xl">
+              <div class="flex items-center mb-6">
+                <div class="w-14 h-14 rounded-full bg-purple-500 bg-opacity-20 flex items-center justify-center mr-4">
+                  <i class="fas fa-history text-purple-400 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-2xl font-bold">Vendas Recentes (6 meses)</h4>
+                  <p class="text-gray-500 text-sm">O pulso do mercado</p>
+                </div>
+              </div>
+
+              <p class="text-gray-400 mb-6">
+                No Zillow.com, analise:
+              </p>
+
+              <div class="space-y-4">
+                <div class="flex items-center justify-between p-3 bg-gray-800 bg-opacity-50 rounded-lg">
+                  <div class="flex items-center">
+                    <i class="fas fa-clock text-purple-400 mr-3"></i>
+                    <span class="text-gray-300">Tempo médio de venda</span>
+                  </div>
+                  <div class="text-sm">
+                    <span class="text-green-400">&lt;30d</span> <span class="text-gray-500">aquecido</span> / 
+                    <span class="text-red-400">&gt;90d</span> <span class="text-gray-500">frio</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-gray-800 bg-opacity-50 rounded-lg">
+                  <div class="flex items-center">
+                    <i class="fas fa-chart-area text-purple-400 mr-3"></i>
+                    <span class="text-gray-300">Tendência de preços</span>
+                  </div>
+                  <span class="text-sm text-gray-400">Últimos 6 meses</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-gray-800 bg-opacity-50 rounded-lg">
+                  <div class="flex items-center">
+                    <i class="fas fa-exchange-alt text-purple-400 mr-3"></i>
+                    <span class="text-gray-300">Volume de transações</span>
+                  </div>
+                  <span class="text-sm text-gold-400 font-semibold">Liquidez é rei</span>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-purple-500 bg-opacity-10 rounded-lg border border-purple-500 border-opacity-30">
+                <p class="text-sm text-gray-400">
+                  <i class="fas fa-map text-purple-400 mr-2"></i>
+                  <strong class="text-white">Ferramenta Premium:</strong> Use visualização "Lot Lines" para análise de densidade e subdivisão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* As 12 Regras de Ouro */}
+          <div class="max-w-6xl mx-auto">
+            <h3 class="font-display text-3xl font-bold mb-12 text-center gradient-gold">
+              As 12 Regras de Ouro do Flipping Profissional
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "FLIPPING NÃO É BRINCADEIRA - É business sério com capital real em risco",
+                "NÃO VALE CORRER RISCOS DESNECESSÁRIOS - Margem de segurança é obrigatória",
+                "INSIRA CLÁUSULAS DE PROTEÇÃO - 'Subject to inspection up to $X'",
+                "O SEGREDO É COMPRAR DESVALORIZADO - Lucro se faz na compra, não na venda",
+                "FLIPPING É COMPLEXO - Requer atenção aos mínimos detalhes",
+                "DEIXE A EMOÇÃO DO LADO DE FORA - Ou perderá dinheiro e sanidade",
+                "OUÇA OS NÚMEROS - Eles não mentem, você sim",
+                "VOCÊ NÃO CONTROLA O PREÇO DE VENDA - O mercado controla",
+                "ANALISE PROFUNDAMENTE AS COMPS - Sua bússola de pricing",
+                "TEMPO MÉDIO DE VENDA IMPORTA - Dinheiro parado perde valor",
+                "ESCOLAS E CRIMINALIDADE - Deal-makers ou deal-breakers",
+                "ÁREAS EM CRESCIMENTO - Oportunidades de timing perfeito"
+              ].map((regra, index) => (
+                <div class="luxury-card p-6 rounded-xl hover:border-gold-400 transition-all">
+                  <div class="flex items-start">
+                    <div class="text-gold-400 font-black text-2xl mr-3 flex-shrink-0">{index + 1}</div>
+                    <p class="text-sm text-gray-400 leading-relaxed">{regra}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
