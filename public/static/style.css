@@ -1,1 +1,258 @@
-h1 { font-family: Arial, Helvetica, sans-serif; }
+/* Custom CSS para design luxuoso e clean */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Typography Luxuosa */
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animações sutis */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Gradient backgrounds luxuosos */
+.gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f4e4b4 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-gold-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #f4e4b4 50%, #d4af37 100%);
+}
+
+.gradient-dark {
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* Cards luxuosos */
+.luxury-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.luxury-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+}
+
+/* Botões premium */
+.btn-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #f4e4b4 50%, #d4af37 100%);
+  color: #0a0a0a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #d4af37;
+  color: #0a0a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+/* Stats luxuosos */
+.stat-card {
+  background: rgba(212, 175, 55, 0.05);
+  border-left: 4px solid #d4af37;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background: rgba(212, 175, 55, 0.1);
+  transform: scale(1.02);
+}
+
+/* Timeline luxuosa */
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  border-left: 2px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.timeline-item:hover {
+  border-left-color: #d4af37;
+}
+
+/* Seção hero com efeito parallax */
+.hero-bg {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* Overlay escuro para imagens */
+.overlay-dark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Seção de números impressionantes */
+.number-display {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Navbar luxuosa */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer luxuoso */
+.footer {
+  background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .number-display {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+  background-size: 1000px 100%;
+}
+
+/* Sections spacing */
+.section {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f4e4b4);
+  transform-origin: left;
+  z-index: 9999;
+}
