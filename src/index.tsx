@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { renderer } from './renderer'
 import loginApp from './login'
 import qrcodeApp from './qrcode'
+import bibliotecaApp from './biblioteca'
 
 const app = new Hono()
 
@@ -9,6 +10,9 @@ app.use(renderer)
 
 // Montar as rotas de QR Code (público)
 app.route('/', qrcodeApp)
+
+// Montar as rotas da Biblioteca Premium (protegido)
+app.route('/', bibliotecaApp)
 
 // Montar as rotas de login/acesso (legado - manter compatibilidade)
 app.route('/', loginApp)
@@ -50,7 +54,8 @@ app.get('/', (c) => {
               <a href="#criterios" class="text-gray-300 hover:text-gold-400 transition text-sm">Critérios</a>
               <a href="#metodologia" class="text-gray-300 hover:text-gold-400 transition text-sm">Metodologia</a>
               <a href="#resultados" class="text-gray-300 hover:text-gold-400 transition text-sm">Resultados</a>
-              <a href="/login" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-crown mr-1"></i>Área de Membros</a>
+              <a href="/biblioteca" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-book mr-1"></i>Biblioteca</a>
+              <a href="/mentoria" class="text-gray-300 hover:text-gold-400 transition text-sm"><i class="fas fa-crown mr-1"></i>Mentoria</a>
               <a href="#contato" class="btn-primary px-6 py-2 rounded-full text-sm">Contato</a>
             </div>
             <button class="md:hidden text-gold-400" onclick="toggleMenu()">
