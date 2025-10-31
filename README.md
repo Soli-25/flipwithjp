@@ -4,12 +4,16 @@
 
 Website elegante, luxuoso e clean desenvolvido para apresentação da metodologia JP Group Construction a investidores imobiliários. O site apresenta o sistema comprovado de flipping houses com ROI de 30-100%.
 
+**V6 - Sistema QR Code:** 🔐 Site totalmente protegido com sistema de acesso via QR Code + Tokens únicos para cada membro + Painel de administração completo.
+
 **V5 - Atualização:** Nova capa premium do livro "The Million Dollar Code" (versão escura/luxuosa) + Sistema de acesso para membros implementado.
 
 ## ✨ URLs
 
 - **Desenvolvimento Local**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai
-- **Área de Membros**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/acesso
+- **Verificação QR Code**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/verify
+- **Admin QR Codes**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/admin/qr
+- **Área de Membros (Legado)**: https://3000-i1fhg7nx63ogzbjaakfu7-82b888ba.sandbox.novita.ai/acesso
 - **Produção**: (Aguardando deploy para Cloudflare Pages)
 - **Website Oficial**: http://www.jpgroupc.com
 - **Email**: contato@jpgroupc.com
@@ -23,7 +27,8 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 - [x] **Anatomia de um Deal Milionário** - Protocolo de Prospecção JP completo
 - [x] **Sistema de Prospecção** - 5 Fases do protocolo com ferramentas e exemplos
 - [x] **Critérios de Seleção de Elite** - 4 Pilares (Crime, Escolas, Crescimento, Vendas)
-- [x] **Sistema de Acesso para Membros** - Login funcional + área protegida com 6 módulos
+- [x] **🔐 Sistema QR Code** - Proteção total do site + Tokens únicos + Painel admin
+- [x] **Sistema de Acesso para Membros** - Login funcional + área protegida com 6 módulos (legado)
 - [x] **Sobre** - Missão, valores e credenciais da empresa
 - [x] **Metodologia** - Timeline de 8 semanas detalhada
 - [x] **Resultados** - Case studies reais com ROI comprovado
@@ -44,7 +49,9 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 - [x] Menu mobile responsivo
 - [x] Cards com efeito hover luxuoso
 - [x] Timeline interativa
-- [x] Sistema de autenticação com proteção de rotas
+- [x] 🔐 Sistema QR Code moderno com tokens únicos
+- [x] Proteção automática via localStorage
+- [x] Painel de administração para gerar QR Codes
 
 ### 📱 Recursos Técnicos
 - [x] Totalmente responsivo (mobile-first)
@@ -150,8 +157,9 @@ npm run deploy:prod
 ```
 webapp/
 ├── src/
-│   ├── index.tsx          # Aplicação principal com todas as seções
-│   ├── login.tsx          # Sistema de autenticação e área de membros
+│   ├── index.tsx          # Aplicação principal com todas as seções + proteção QR
+│   ├── login.tsx          # Sistema de autenticação e área de membros (legado)
+│   ├── qrcode.tsx         # Sistema QR Code completo (NEW V6)
 │   └── renderer.tsx       # Template HTML base
 ├── public/
 │   └── static/
@@ -160,7 +168,8 @@ webapp/
 │       └── jp-photo.jpg   # Foto profissional do autor Juscelio Cruz
 ├── dist/                  # Build output (gerado)
 ├── .git/                  # Repositório git
-├── INSTRUCOES_ACESSO.md   # Documentação do sistema de acesso
+├── SISTEMA_QR_CODE.md     # 📖 Documentação completa do sistema QR Code (NEW)
+├── INSTRUCOES_ACESSO.md   # Documentação do sistema de acesso legado
 ├── ecosystem.config.cjs   # Configuração PM2
 ├── wrangler.jsonc         # Configuração Cloudflare
 ├── vite.config.ts         # Configuração Vite
@@ -242,12 +251,40 @@ webapp/
 - Fundador: **Juscelio Cruz** (JP)
 - Livro: "The Million Dollar Code: Sistema Comprovado de Flipping Houses"
 
-### Credenciais de Acesso (Demo)
-Para acessar a área de membros, utilize:
+### 🔐 Sistema de Acesso QR Code (V6)
+
+**⚠️ IMPORTANTE: Todo o site agora está protegido!**
+
+Para acessar o site, você precisa de um **Token de Acesso válido**:
+
+#### Tokens Demo Disponíveis:
+1. `TOKEN-DEMO-001` - Membro Demo
+2. `TOKEN-VIP-002` - Investidor VIP
+3. `TOKEN-ELITE-003` - Cliente Elite
+
+#### Como Acessar:
+
+**Método 1: Via Painel Admin**
+1. Acesse: `/admin/qr`
+2. Visualize os QR Codes gerados
+3. Escaneie com câmera do celular
+4. Acesso automático liberado por 30 dias
+
+**Método 2: Inserção Manual**
+1. Acesse: `/verify`
+2. Digite um dos tokens acima
+3. Clique em "Verificar Acesso"
+4. Redirecionamento automático para o site
+
+**📖 Documentação Completa:** Veja `SISTEMA_QR_CODE.md` para todos os detalhes técnicos.
+
+### Credenciais de Acesso Legado (Sistema Antigo)
+Sistema de login anterior (mantido para compatibilidade):
+- Acesse: `/acesso`
 - Email: `demo@jpgroup.com`
 - Senha: `mentoria2024`
 
-Veja `INSTRUCOES_ACESSO.md` para mais detalhes.
+Veja `INSTRUCOES_ACESSO.md` para detalhes do sistema legado.
 
 ## 📄 Licença
 
