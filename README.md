@@ -4,6 +4,8 @@
 
 Website elegante, luxuoso e clean desenvolvido para apresentação da metodologia JP Group Construction a investidores imobiliários. O site apresenta o sistema comprovado de flipping houses com ROI de 30-100%.
 
+**V8 - Agenda & Lançamento:** 📅 Agenda completa de mentorias ao vivo (4 tipos de sessões) + Banner de lançamento do livro físico "The Million Dollar Code" (2025).
+
 **V7 - Biblioteca Premium:** 📚 Sistema completo com 5 documentos exclusivos (150K+ palavras) + Visualizador Markdown luxuoso + Integração total com QR Code.
 
 **V6 - Sistema QR Code:** 🔐 Site totalmente protegido com sistema de acesso via QR Code + Tokens únicos para cada membro + Painel de administração completo.
@@ -25,6 +27,7 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
 
 ### ✅ Seções Completas
 - [x] **Hero Section** - Apresentação impactante com foto profissional do autor + capa premium do livro
+- [x] **📢 Banner Lançamento** - "The Million Dollar Code" livro físico 2025
 - [x] **Quote Section** - Frase de efeito do fundador Juscelio Cruz
 - [x] **Mentoria Master Flip** - 5 Pilares da Transformação
 - [x] **Anatomia de um Deal Milionário** - Protocolo de Prospecção JP completo
@@ -36,6 +39,11 @@ Website elegante, luxuoso e clean desenvolvido para apresentação da metodologi
   - 🧮 Calculadoras e Templates (19KB)
   - 💎 Estrutura de Produtos (17KB)
   - 📖 Índice Master (14KB)
+- [x] **📅 Agenda de Mentorias** - 4 tipos de sessões ao vivo
+  - Q&A Mensal (1ª Sexta, 19:00-21:00 EST)
+  - Deal Analysis (Quinzenal, 20:00-21:30 EST)
+  - Masterclass (Última Terça, 19:30-22:00 EST)
+  - Office Hours (1-on-1, Inner Circle)
 - [x] **🔐 Sistema QR Code** - Proteção total do site + Tokens únicos + Painel admin
 - [x] **Sistema de Acesso para Membros** - Login funcional + área protegida com 6 módulos (legado)
 - [x] **Sobre** - Missão, valores e credenciais da empresa
