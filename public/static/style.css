@@ -164,12 +164,83 @@ html {
   border-left-color: #d4af37;
 }
 
-/* Seção hero com efeito parallax */
+/* Seção hero com efeito parallax e overlay de imagem */
 .hero-bg {
   background: 
     radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
     linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.85) 100%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Imagem do livro 3D */
+.book-showcase {
+  position: relative;
+  perspective: 1500px;
+  transition: transform 0.6s ease;
+}
+
+.book-showcase:hover {
+  transform: scale(1.05);
+}
+
+.book-showcase img {
+  filter: drop-shadow(0 30px 60px rgba(212, 175, 55, 0.3));
+  transition: all 0.6s ease;
+}
+
+.book-showcase:hover img {
+  filter: drop-shadow(0 40px 80px rgba(212, 175, 55, 0.5));
+}
+
+/* Foto do JP com efeito de luxo */
+.jp-photo {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.jp-photo:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 30px 80px rgba(212, 175, 55, 0.3);
+  transform: translateY(-5px);
+}
+
+.jp-photo img {
+  transition: transform 0.6s ease;
+}
+
+.jp-photo:hover img {
+  transform: scale(1.05);
+}
+
+.jp-photo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(212, 175, 55, 0.1) 100%);
+  pointer-events: none;
 }
 
 /* Overlay escuro para imagens */
@@ -243,6 +314,69 @@ html {
   .section {
     padding: 60px 0;
   }
+}
+
+/* Efeitos de brilho dourado */
+.gold-glow {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.5),
+               0 0 40px rgba(212, 175, 55, 0.3),
+               0 0 60px rgba(212, 175, 55, 0.1);
+}
+
+/* Badge luxuoso */
+.luxury-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(244, 228, 180, 0.1) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.luxury-badge:hover {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(244, 228, 180, 0.2) 100%);
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 12px 48px rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Separador dourado elegante */
+.elegant-separator {
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #d4af37 50%, transparent 100%);
+  margin: 40px auto;
+  position: relative;
+}
+
+.elegant-separator::before {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d4af37;
+  font-size: 12px;
+  background: #0a0a0a;
+  padding: 0 15px;
+}
+
+/* Grid de luxo */
+.luxury-grid {
+  display: grid;
+  gap: 40px;
+  position: relative;
+}
+
+.luxury-grid::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, transparent 100%);
+  border-radius: 30px;
+  pointer-events: none;
 }
 
 /* Scroll progress bar */

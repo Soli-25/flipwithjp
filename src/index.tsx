@@ -43,50 +43,131 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section class="hero-bg min-h-screen flex items-center justify-center pt-20">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-          <div class="animate-fade-in-up">
-            <div class="inline-block mb-6 px-6 py-2 border border-gold-400 rounded-full text-gold-400 text-sm font-semibold tracking-wider">
-              SISTEMA COMPROVADO
-            </div>
-            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
-              O CÓDIGO DE UM<br />
-              <span class="gradient-gold">MILHÃO DE DÓLARES</span>
-            </h1>
-            <p class="text-xl text-gray-400 mb-4 max-w-4xl mx-auto leading-relaxed font-semibold">
-              Processos e Estratégias Secretas do Mercado Imobiliário Revelados por Quem Domina o Flipping House há Mais de uma Década
-            </p>
-            <p class="text-lg md:text-xl text-gray-500 mb-8 max-w-3xl mx-auto">
-              Transforme propriedades desvalorizadas em lucros extraordinários com o sistema testado e comprovado da JP Group Construction
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-16">
-              <a href="#contato" class="btn-primary px-10 py-4 rounded-full text-lg font-semibold">
-                <i class="fas fa-rocket mr-2"></i>
-                Começar Agora
-              </a>
-              <a href="#metodologia" class="btn-secondary px-10 py-4 rounded-full text-lg font-semibold">
-                <i class="fas fa-play-circle mr-2"></i>
-                Ver Metodologia
-              </a>
+      {/* Hero Section - Versão Luxuosa com Imagens */}
+      <section class="hero-bg min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 hero-content">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Coluna Esquerda - Conteúdo */}
+            <div class="text-center lg:text-left animate-fade-in-up">
+              <div class="inline-block mb-6 px-6 py-3 luxury-badge rounded-full text-gold-400 text-sm font-semibold tracking-wider">
+                <i class="fas fa-crown mr-2"></i>
+                MENTORIA MASTER FLIP
+              </div>
+              
+              <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+                O CÓDIGO DE UM<br />
+                <span class="gradient-gold gold-glow">MILHÃO DE DÓLARES</span>
+              </h1>
+              
+              <div class="elegant-separator"></div>
+              
+              <p class="text-lg md:text-xl text-gray-300 mb-4 leading-relaxed font-semibold">
+                Processos e Estratégias Secretas do Mercado Imobiliário
+              </p>
+              <p class="text-base md:text-lg text-gray-400 mb-8 leading-relaxed">
+                <span class="text-gold-400 font-semibold">Revelados por quem domina o Flipping House há mais de uma década</span>
+              </p>
+              
+              {/* Foto do JP */}
+              <div class="flex items-center justify-center lg:justify-start gap-4 mb-8">
+                <div class="jp-photo rounded-full w-20 h-20 overflow-hidden">
+                  <img src="/static/jp-hero.jpg" alt="Juscelio Toledo" class="w-full h-full object-cover" />
+                </div>
+                <div class="text-left">
+                  <div class="font-display text-xl font-bold gradient-gold">Juscelio Toledo</div>
+                  <div class="text-sm text-gray-400">Founder & CEO, JP Group Construction</div>
+                  <div class="text-xs text-gold-400 mt-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="ml-2">10+ Anos de Experiência</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                <a href="#contato" class="btn-primary px-8 py-4 rounded-full text-base font-semibold shadow-lg">
+                  <i class="fas fa-gem mr-2"></i>
+                  Acessar Mentoria Elite
+                </a>
+                <a href="#sistema" class="btn-secondary px-8 py-4 rounded-full text-base font-semibold">
+                  <i class="fas fa-book-open mr-2"></i>
+                  Ver Sistema Completo
+                </a>
+              </div>
+
+              {/* Stats Compactos */}
+              <div class="grid grid-cols-3 gap-4">
+                <div class="text-center lg:text-left">
+                  <div class="text-3xl font-black gradient-gold mb-1">30-100%</div>
+                  <div class="text-xs text-gray-400">ROI Projetado</div>
+                </div>
+                <div class="text-center lg:text-left">
+                  <div class="text-3xl font-black gradient-gold mb-1">8 Sem.</div>
+                  <div class="text-xs text-gray-400">Timeline</div>
+                </div>
+                <div class="text-center lg:text-left">
+                  <div class="text-3xl font-black gradient-gold mb-1">$10M+</div>
+                  <div class="text-xs text-gray-400">Em Deals</div>
+                </div>
+              </div>
             </div>
 
-            {/* Stats Hero */}
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-              <div class="stat-card p-8 rounded-2xl">
-                <div class="number-display gradient-gold mb-2">30-100%</div>
-                <div class="text-gray-400 text-lg">ROI Projetado</div>
-              </div>
-              <div class="stat-card p-8 rounded-2xl">
-                <div class="number-display gradient-gold mb-2">8 Sem.</div>
-                <div class="text-gray-400 text-lg">Timeline Médio</div>
-              </div>
-              <div class="stat-card p-8 rounded-2xl">
-                <div class="number-display gradient-gold mb-2">10+ Anos</div>
-                <div class="text-gray-400 text-lg">de Experiência</div>
+            {/* Coluna Direita - Livro em Destaque */}
+            <div class="flex items-center justify-center lg:justify-end">
+              <div class="book-showcase animate-fade-in">
+                <img 
+                  src="/static/book-cover.jpg" 
+                  alt="The Million Dollar Code - From Seed to Profit" 
+                  class="w-full max-w-md rounded-lg"
+                />
+                
+                {/* Badges sobre o livro */}
+                <div class="mt-8 space-y-3">
+                  <div class="luxury-badge p-4 rounded-xl text-center">
+                    <div class="flex items-center justify-center gap-3">
+                      <i class="fas fa-certificate text-gold-400 text-2xl"></i>
+                      <div class="text-left">
+                        <div class="font-bold text-white">Sistema Completo</div>
+                        <div class="text-sm text-gray-400">Prospecção ao Lucro</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="luxury-badge p-4 rounded-xl text-center">
+                    <div class="flex items-center justify-center gap-3">
+                      <i class="fas fa-trophy text-gold-400 text-2xl"></i>
+                      <div class="text-left">
+                        <div class="font-bold text-white">Casos Reais</div>
+                        <div class="text-sm text-gray-400">ROI de 30-100%</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="luxury-badge p-4 rounded-xl text-center">
+                    <div class="flex items-center justify-center gap-3">
+                      <i class="fas fa-shield-alt text-gold-400 text-2xl"></i>
+                      <div class="text-left">
+                        <div class="font-bold text-white">Conhecimento Proprietário</div>
+                        <div class="text-sm text-gray-400">10+ Anos Refinado</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Efeito de partículas douradas */}
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+          <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-gold-400 rounded-full opacity-30 animate-pulse"></div>
+          <div class="absolute top-1/3 right-1/4 w-1 h-1 bg-gold-400 rounded-full opacity-40 animate-pulse" style="animation-delay: 1s;"></div>
+          <div class="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-gold-400 rounded-full opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+          <div class="absolute top-2/3 right-1/3 w-1 h-1 bg-gold-400 rounded-full opacity-50 animate-pulse" style="animation-delay: 1.5s;"></div>
         </div>
       </section>
 
